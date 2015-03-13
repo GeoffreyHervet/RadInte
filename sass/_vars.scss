@@ -6,7 +6,7 @@ $gray:              #878787;
 $gray-dark:         #575757;
 $gray-lighter:      #c0c0c0;
 $red:               #ff2424;
-
+$pink:              #ff1e78;
 
 $base-font-size:    14;
 
@@ -29,6 +29,9 @@ $helvetica:         'Helvetica', $helvetica-neue;
 }
 .text-white {
     color: $white;
+}
+.text-pink {
+    color: $pink;
 }
 
 .stroke-gray {

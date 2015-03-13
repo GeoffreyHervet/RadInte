@@ -13,6 +13,9 @@
 .text-white {
   color: #FFFFFF; }
 
+.text-pink {
+  color: #ff1e78; }
+
 .stroke-gray {
   position: relative; }
   .stroke-gray:after {
@@ -38,14 +41,6 @@ body {
   .navbar > li > a {
     padding-top: 13px;
     padding-bottom: 13px; }
-  .navbar ul.dropdown-menu {
-    border-radius: 0;
-    background: rgba(0, 0, 0, 0.9); }
-    .navbar ul.dropdown-menu a {
-      color: white; }
-      .navbar ul.dropdown-menu a:hover {
-        background: none;
-        text-decoration: underline; }
   .navbar .container {
     position: relative; }
     .navbar .container form.search {
@@ -111,6 +106,16 @@ body {
         .navbar .cart-products li.actions a.btn-gray {
           color: #575757; }
 
+ul.dropdown-menu {
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.8); }
+  ul.dropdown-menu a {
+    color: white; }
+    ul.dropdown-menu a:hover {
+      color: white;
+      background: none;
+      text-decoration: underline; }
+
 div.text-top {
   font-size: 12px;
   position: relative; }
@@ -139,5 +144,60 @@ div.text-top {
   .btn.btn-white {
     border: 1px solid #FFFFFF;
     color: #FFFFFF; }
+
+nav.categories {
+  padding: 0;
+  margin-top: 20px;
+  padding-bottom: 17px; }
+  nav.categories > ul {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    nav.categories > ul > li {
+      display: inline-block;
+      text-align: center;
+      padding: 0 2.5%; }
+      nav.categories > ul > li > a {
+        font-family: "Brandon Grotesque", Verdana, sans-serif;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 400;
+        padding-bottom: 17px;
+        color: #000000; }
+        nav.categories > ul > li > a.text-pink {
+          color: #ff1e78; }
+      nav.categories > ul > li > ul {
+        margin-top: 17px; }
+        nav.categories > ul > li > ul a {
+          font-family: "Helvetica Neue", Helvetica, "Brandon Grotesque", Verdana, sans-serif;
+          font-size: 12px;
+          line-height: 30px; }
+
+a.big-image {
+  display: block;
+  width: 100%;
+  position: relative; }
+  a.big-image img {
+    width: 100%; }
+  a.big-image .headline, a.big-image .link {
+    position: absolute;
+    text-align: center;
+    left: 5%;
+    right: 5%;
+    bottom: 100px;
+    font-size: 30px;
+    font-family: "Helvetica Neue", Helvetica, "Brandon Grotesque", Verdana, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none; }
+  a.big-image .link {
+    text-transform: uppercase;
+    bottom: 55px;
+    font-size: 14px;
+    font-family: "Brandon Grotesque", Verdana, sans-serif; }
+    a.big-image .link:hover {
+      text-decoration: underline; }
 
 /*# sourceMappingURL=rad.css.map */
