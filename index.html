@@ -10,7 +10,8 @@
 
     <title>Theme Template for Bootstrap</title>
     <!-- Bootstrap core CSS -->
-    <link href="css/rad.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="sass/rad.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -24,7 +25,7 @@
 
 <body role="document">
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -33,14 +34,24 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">RAD.</a>
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="RAD." title="Logo RAD.co" /></a>
         </div>
+        <form role="form" method="GET" id="search" class="search">
+            <a href="#search" data-toggle="collapse" aria-expanded="false"><i class="glyphicon-search glyphicon"></i></a>
+            <input type="search" name="q" />
+            <input type="submit" class="sr-only" value="Rechercher" />
+        </form>
         <div id="navbar" class="navbar-collapse collapse navbar-right">
             <ul class="nav navbar-nav">
-                <li><a href="#search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
+                <li style="color: #ffffff">
+                    <a href="#search" data-toggle="collapse" aria-expanded="false">
+                        <i class="glyphicon-search glyphicon"></i>
+                        <span class="sr-only">Recherche</span>
+                    </a>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mon compte</a>
-                    <ul class="dropdown-menu" role="menu">
+                        <ul class="dropdown-menu dropdown-menu-left" role="menu">
                         <li><a href="#">Profil</a></li>
                         <li><a href="#">Commandes</a></li>
                         <li><a href="#">Crédits d'achat</a></li>
@@ -50,11 +61,36 @@
                 <li><a href="#">France</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">(1) Panier</a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li>
-                            <a href="#" class="cart-product">
-                                <img src=""
+                    <ul class="dropdown-menu dropdown-menu-right cart-products" role="menu">
+                        <li class="border">
+                            <a href="#" class="cart-product clearfix">
+                                <img src="img/tmp/product-cart-54x54.jpg" alt="Mon produit de fou" />
+                                <strong class="price text-white">19,90 €</strong>
+                                <span class="price text-gray stroke-gray">29,90 €</span>
+                                <span class="title">
+                                    Fuck christmas sweater
+                                    <span class="specs">Fuck christmas sweater</span>
+                                </span>
                             </a>
+                        </li>
+                        <li class="border">
+                            <a href="#" class="cart-product clearfix">
+                                <img src="img/tmp/product-cart-54x54.jpg" alt="Mon produit de fou" />
+                                <span class="price text-white">19,90 €</span>
+                                <span class="title">
+                                    Fuck christmas sweater
+                                    <span class="specs">Fuck christmas sweater</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="total clearfix">
+                            <strong class="text-white pull-left">Sous-total</strong>
+                            <strong class="text-gray stroke-gray pull-right">39,80 €</strong>
+                            <strong class="text-white pull-right">39,80 € &nbsp; </strong>
+                        </li>
+                        <li class="actions">
+                            <a href="#" class="btn btn-gray">Voir mon panier</a>
+                            <a href="#" class="btn btn-white">Commander</a>
                         </li>
                     </ul>
                 </li>
@@ -62,12 +98,30 @@
         </div>
     </div>
 </nav>
+<div class="container">
+    <div class="text-top">
+        <div class="text-center">
+            <span>
+                Invitez vos amis et gagnez 50€ de crédit d’achat -
+                <a href="#"><strong>Acheter une carte cadeau</strong></a>
+            </span>
+        </div>
+        <span class="pull-right text-right">
+            Mer. 25 Octobre 10:32 - expédié en 48hrs<br />
+            <a href="#">Service client</a>
+        </span>
+    </div>
+</div>
 
 <div class="container theme-showcase" role="main">
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
     <h1>Theme example</h1>
+    <p>
+
+        COUCOU
+    </p>
     <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
 </div>
 

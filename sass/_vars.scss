@@ -1,0 +1,44 @@
+// Colors
+$white:             #FFFFFF;
+$black:             #000000;
+$gray-light:        #c0c0c0;
+$gray:              #878787;
+$gray-dark:         #575757;
+$gray-lighter:      #c0c0c0;
+$red:               #ff2424;
+
+
+$base-font-size:    14;
+
+// Fonts
+$brandonFont:       "Brandon Grotesque", Verdana, sans-serif;
+$helvetica-neue:    'Helvetica Neue', Helvetica, $brandonFont;
+$helvetica:         'Helvetica', $helvetica-neue;
+
+.text-gray {
+    color: $gray;
+}
+.text-black {
+    color: $black;
+}
+.text-gray-light {
+    color: $gray-light;
+}
+.text-red {
+    color: #ff2424;
+}
+.text-white {
+    color: $white;
+}
+
+.stroke-gray {
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        border-top: 1px solid $gray;
+    }
+}
