@@ -1,0 +1,30 @@
+.text-gray {
+    color: $gray;
+}
+.text-black {
+    color: $black;
+}
+.text-gray-light {
+    color: $gray-light;
+}
+.text-red {
+    color: #ff2424;
+}
+.text-white {
+    color: $white;
+}
+.text-pink {
+    color: $pink;
+}
+
+.stroke-gray {
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        border-top: 1px solid $gray;
+    }
+}

@@ -1,0 +1,15 @@
+// Import basics
+@import "basics/vars";
+@import "basics/functions";
+
+// Import all reusable components
+@import "components/colors";
+@import "components/btn";
+@import "components/dropdown";
+
+@import "components/header";
+@import "components/categories-nav";
+@import "components/footer";
+
+// Import pages
+@import "pages/home";

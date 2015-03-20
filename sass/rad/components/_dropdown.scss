@@ -1,0 +1,14 @@
+$bgColor: rgba(0,0,0,0.8);
+
+ul.dropdown-menu {
+    border-radius: 0;
+    background-color: $bgColor;
+    a {
+        color: white;
+        &:hover {
+            color: white;
+            background: none;
+            text-decoration: underline;
+        }
+    }
+}

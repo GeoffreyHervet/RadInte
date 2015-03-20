@@ -1,0 +1,30 @@
+.fixed-footer {
+    position: fixed;
+    background: white;
+    border-top: 1px solid $gray-light;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 28px;
+
+    ul {
+        display: block;
+        text-align: center;
+        li {
+            list-style: none inside;
+            display: inline-block;
+            line-height: 28px;
+            padding: 0 10px;
+            a {
+                font-size: 10px;
+                text-transform: uppercase;
+                &:hover {
+                    color: $black;
+                }
+            }
+            .fb-like {
+                top: -4px;
+            }
+        }
+    }
+}
