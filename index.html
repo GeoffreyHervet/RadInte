@@ -26,11 +26,18 @@
 <body role="document">
 <div id="fb-root"></div>
 <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1448799852059806&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+<div id="site-wrapper">
 
 <nav class="navbar navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="search-togggler">
+            <button type="button" class="navbar-toggle collapsed" id="right-menu-toggler">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <button type="button" class="navbar-toggle navbar-toggle-left collapsed" id="left-menu-toggler">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -45,25 +52,11 @@
         </form>
         <div id="navbar" class="navbar-collapse collapse navbar-right">
             <ul class="nav navbar-nav">
-                <li style="color: #ffffff">
-                    <a href="#search" data-toggle="collapse" aria-expanded="false" id="search-header">
-                        <i class="glyphicon-search glyphicon"></i>
-                        <span class="sr-only">Recherche</span>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle cart-btn" data-toggle="dropdown" role="button">
+                        (<span id="cart-count">1</span><span class="hidden-md hidden-lg"> article </span>) Panier
                     </a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Mon compte</a>
-                        <ul class="dropdown-menu dropdown-menu-left" role="menu">
-                        <li><a href="#">Profil</a></li>
-                        <li><a href="#">Commandes</a></li>
-                        <li><a href="#">Crédits d'achat</a></li>
-                        <li><a href="#">Déconnexion</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">France</a></li>
-                <li class="dropdown">
-                    <a href="#" data-mobile-click-scroll="#cart-header-container" data-scroll-container="#navbar" class="dropdown-toggle" data-toggle="dropdown" role="button">(1) Panier</a>
-                    <ul class="dropdown-menu dropdown-menu-right cart-products" role="menu" id="cart-header-container">
+                    <ul class="dropdown-menu dropdown-menu-right cart-products hidden-sm hidden-xs" role="menu" id="cart-header-container">
                         <li class="border">
                             <a href="#" class="cart-product clearfix">
                                 <img src="img/tmp/product-cart-54x54.jpg" alt="Mon produit de fou" />
@@ -95,6 +88,27 @@
                             <a href="#" class="btn btn-white">Commander</a>
                         </li>
                     </ul>
+                </li>
+                <li><a data-toggle="modal" href="#change-locale-modale">France</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Mon compte</a>
+                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
+                        <li><a href="#">Profil</a></li>
+                        <li><a href="#">Commandes</a></li>
+                        <li><a href="#">Crédits d'achat</a></li>
+                        <li><a href="#">Déconnexion</a></li>
+                    </ul>
+                </li>
+                <li style="color: #ffffff">
+                    <a href="#search" data-toggle="collapse" aria-expanded="false" id="search-header">
+                        <i class="glyphicon-search glyphicon"></i>
+                        <span class="sm-only">&nbsp; Recherche</span>
+                        <span class="sr-only">Recherche</span>
+                    </a>
+                    <form role="form" method="GET" id="search-mobile" class="search-mobile search hide">
+                        <input type="search" name="q" />
+                        <input type="submit" class="sr-only" value="Rechercher" />
+                    </form>
                 </li>
             </ul>
         </div>
@@ -249,6 +263,35 @@
     </a>
 </div>
 
+<div class="modal fade" id="change-locale-modale" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Changer de Pays</h4>
+                <p class="modal-sub-title">
+                    Please select your country from the list below so we can display the correct prices,
+                    delivery times and shipping costs for your shipping destination.
+                </p>
+            </div>
+            <div class="modal-body padded text-center country-modal">
+                <div class="row">
+                    <a class="text-black col-md-4 text-underline" href="javascript:;">France</a>
+                    <a class="text-black col-md-4" href="javascript:;">United States</a>
+                    <a class="text-black col-md-4" href="javascript:;">Canada</a>
+                </div>
+                <div class="row">
+                    <a class="text-black col-md-4" href="javascript:;">France</a>
+                    <a class="text-black col-md-4" href="javascript:;">United States</a>
+                    <a class="text-black col-md-4" href="javascript:;">Canada</a>
+                </div>
+                <br /><br />
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <footer class="fixed-footer">
     <ul>
         <li><a class="text-black" href="#">Service client</a></li>
@@ -259,6 +302,7 @@
         <li><div class="fb-like" data-href="https://www.facebook.com/rad" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div></li>
     </ul>
 </footer>
+</div>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->

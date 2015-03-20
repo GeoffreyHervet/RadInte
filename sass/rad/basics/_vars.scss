@@ -1,6 +1,7 @@
 // Colors
 $white:             #FFFFFF;
 $black:             #000000;
+$black-light:       #272727;
 $gray-light:        #c0c0c0;
 $gray:              #878787;
 $gray-dark:         #575757;
@@ -14,3 +15,7 @@ $base-font-size:    14;
 $brandonFont:       "Brandon Grotesque", Verdana, sans-serif;
 $helvetica-neue:    'Helvetica Neue', Helvetica, $brandonFont;
 $helvetica:         'Helvetica', $helvetica-neue;
+
+.text-underline {
+    text-decoration: underline;
+}
