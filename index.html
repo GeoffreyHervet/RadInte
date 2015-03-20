@@ -24,6 +24,8 @@
 </head>
 
 <body role="document">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1448799852059806&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
 
 <nav class="navbar navbar-fixed-top">
     <div class="container">
@@ -201,12 +203,53 @@
 </div>
 
 <div class="container">
-    <a class="big-image" href="#">
+    <a class="big-image img-text" href="#">
         <img src="img/tmp/brand-xxl-1020-572.jpg" />
-        <div class="headline">Nouvelle collection</div>
-        <span class="link">Acheter maintenant</span>
+        <span class="texts">
+            <strong>Nouvelle collection</strong>
+            <span class="link">Acheter maintenant</span>
+        </span>
     </a>
 </div>
+<div class="container imgs-text">
+    <a class="img-text img-vertical no-left" href="#">
+        <img src="img/tmp/brand-l-335-500.jpg" />
+        <span class="texts white">
+            <strong>Nouvelle collection</strong>
+            <span class="link">Acheter maintenant</span>
+        </span>
+    </a>
+    <a class="img-text img-vertical" href="#">
+        <img src="img/tmp/brand-l-335-500.jpg" />
+        <span class="texts">
+            <strong>Nouvelle collection</strong>
+            <span class="link">Acheter maintenant</span>
+        </span>
+    </a>
+    <a class="img-text img-vertical no-right" href="#">
+        <img src="img/tmp/brand-l-335-500.jpg" />
+        <span class="texts white">
+            <strong>Nouvelle collection</strong>
+            <span class="link">Acheter maintenant</span>
+        </span>
+    </a>
+    <a class="img-text img-horizontal no-left" href="#">
+        <img src="img/tmp/brand-w-505-310.jpg" />
+        <span class="texts">
+            <strong>Nouvelle collection</strong>
+            <span class="link">Acheter maintenant</span>
+        </span>
+    </a>
+    <a class="img-text img-horizontal no-right" href="#">
+        <img src="img/tmp/brand-w-505-310.jpg" />
+        <span class="texts white">
+            <strong>Nouvelle collection</strong>
+            <span class="link">Acheter maintenant</span>
+        </span>
+    </a>
+</div>
+
+
 <div class="container theme-showcase" role="main">
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -773,11 +816,21 @@
 
 </div> <!-- /container -->
 
-
+<footer class="fixed-footer">
+    <ul>
+        <li><a class="text-black" href="#">Service client</a></li>
+        <li><a class="text-gray" href="#">Presse</a></li>
+        <li><a class="text-gray" href="#">Newsletter</a></li>
+        <li><a class="text-gray" href="#">Recrutement</a></li>
+        <li><a class="text-gray" href="#">Suivez-nous</a></li>
+        <li><div class="fb-like" data-href="https://www.facebook.com/rad" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div></li>
+    </ul>
+</footer>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/rad.js"></script>
 </body>
 </html>

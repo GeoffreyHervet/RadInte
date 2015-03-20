@@ -29,7 +29,8 @@
 body {
   font-size: 14px;
   font-family: "Helvetica Neue", Helvetica, "Brandon Grotesque", Verdana, sans-serif;
-  padding-top: 51px; }
+  padding-top: 51px;
+  padding-bottom: 31px; }
 
 .navbar {
   background: white;
@@ -176,28 +177,81 @@ nav.categories {
           line-height: 30px; }
 
 a.big-image {
+  width: 100%; }
+
+a.img-text {
   display: block;
-  width: 100%;
+  margin-bottom: 7px;
   position: relative; }
-  a.big-image img {
+  a.img-text img {
     width: 100%; }
-  a.big-image .headline, a.big-image .link {
+  a.img-text .texts {
     position: absolute;
     text-align: center;
     left: 5%;
     right: 5%;
-    bottom: 100px;
+    bottom: 5%;
     font-size: 30px;
     font-family: "Helvetica Neue", Helvetica, "Brandon Grotesque", Verdana, sans-serif;
     font-weight: bold;
     color: white;
     text-decoration: none; }
-  a.big-image .link {
-    text-transform: uppercase;
-    bottom: 55px;
-    font-size: 14px;
-    font-family: "Brandon Grotesque", Verdana, sans-serif; }
-    a.big-image .link:hover {
+    a.img-text .texts.white {
+      background: rgba(255, 255, 255, 0.8);
+      color: #000000; }
+    a.img-text .texts strong {
+      display: block;
+      padding-bottom: 30px; }
+    a.img-text .texts span {
+      text-transform: uppercase;
+      padding-bottom: 20px;
+      font-size: 14px;
+      font-family: "Brandon Grotesque", Verdana, sans-serif;
+      display: block;
       text-decoration: underline; }
+  a.img-text.img-vertical {
+    float: left;
+    width: 32.6666%;
+    margin-right: 0.5%;
+    margin-left: 0.5%; }
+    a.img-text.img-vertical.no-right {
+      margin-right: 0; }
+    a.img-text.img-vertical.no-left {
+      margin-left: 0; }
+  a.img-text.img-horizontal {
+    float: left;
+    width: 49.5%;
+    margin-right: .5%;
+    margin-left: .5%; }
+    a.img-text.img-horizontal.no-right {
+      margin-right: 0; }
+    a.img-text.img-horizontal.no-left {
+      margin-left: 0; }
+    a.img-text.img-horizontal .texts strong {
+      padding-bottom: 15px; }
+
+.fixed-footer {
+  position: fixed;
+  background: white;
+  border-top: 1px solid #c0c0c0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 28px; }
+  .fixed-footer ul {
+    display: block;
+    text-align: center; }
+    .fixed-footer ul li {
+      list-style: none inside;
+      display: inline-block;
+      line-height: 28px;
+      padding: 0 10px; }
+      .fixed-footer ul li a {
+        font-size: 10px;
+        text-transform: uppercase; }
+        .fixed-footer ul li a:hover {
+          color: #000000; }
+      .fixed-footer ul li .fb-like {
+        top: -4px; }
 
 /*# sourceMappingURL=rad.css.map */
