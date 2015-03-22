@@ -1,6 +1,5 @@
 var gulp	= require('gulp');
 var sass	= require('gulp-sass');
-var watch	= require('gulp-watch');
 var notify	= require('gulp-notify');
 var rename	= require('gulp-rename');
 var concat	= require('gulp-concat');
@@ -18,13 +17,14 @@ gulp.task('sass', function () {
 
 gulp.task('css.min', ['sass'], function(){
 	gulp.src('./css/*.css')
-		.pipe(rename({suffix: '.min'}))
+		.pipe(concat('rad.min.css'))
 		.pipe(minCss()).on('error', util.log)
 		.pipe(gulp.dest('./css'))
 	;
 });
 
-
 gulp.task('watch', ['sass'], function(){
 	gulp.watch(['./sass/*.scss', './sass/rad/**/*.scss'], ['sass']);
 });
+
+gulp.task('default', ['css.min']);
