@@ -66,8 +66,9 @@ gulp.task('js.min', ['js.clean', 'js'], function(){
 	;
 });
 
-gulp.task('watch', ['sass'], function(){
+gulp.task('watch', ['sass', 'js'], function(){
 	gulp.watch(['sass/*.scss', 'sass/rad/**/*.scss'], ['sass']);
+	gulp.watch(['js/src/**/*.js'], ['js']);
 });
 
 gulp.task('default', ['css.min', 'js.min']);
