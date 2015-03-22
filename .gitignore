@@ -6,3 +6,4 @@ sass/rad.css
 css/
 js/*.js
 node_modules
+bower_components
