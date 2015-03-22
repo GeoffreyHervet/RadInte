@@ -4,4 +4,5 @@ sass/rad.css.map
 sass/rad.css
 .DS_Store
 css/
+js/*.js
 node_modules
