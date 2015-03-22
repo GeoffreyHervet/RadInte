@@ -2,11 +2,15 @@
 @import "basics/vars";
 @import "basics/functions";
 
+// Dependencies
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
 // Import all reusable components
 @import "components/colors";
 @import "components/btn";
 @import "components/dropdown";
 @import "components/modal";
+@import "components/misc";
 
 @import "components/header";
 @import "components/categories-nav";

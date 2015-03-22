@@ -1,3 +1,6 @@
+// boostrap vars
+$icon-font-path: '/fonts/';
+
 // Colors
 $white:             #FFFFFF;
 $black:             #000000;
@@ -15,7 +18,3 @@ $base-font-size:    14;
 $brandonFont:       "Brandon Grotesque", Verdana, sans-serif;
 $helvetica-neue:    'Helvetica Neue', Helvetica, $brandonFont;
 $helvetica:         'Helvetica', $helvetica-neue;
-
-.text-underline {
-    text-decoration: underline;
-}
