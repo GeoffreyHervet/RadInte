@@ -9,6 +9,9 @@ body {
     font-family: $helvetica-neue;
     padding-top: 51px;
     padding-bottom: 31px;
+    &.gray {
+        background-color: $white-dark;
+    }
 }
 @media (max-width   : 767px) {
     padding-top: 55px;
