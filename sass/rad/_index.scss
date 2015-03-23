@@ -12,6 +12,7 @@
 @import "components/modal";
 @import "components/misc";
 @import "components/form";
+@import "components/pagination";
 @import "components/scrollpanel";
 @import "components/summary-scroll";
 
@@ -21,3 +22,4 @@
 
 // Import pages
 @import "pages/home";
+@import "pages/category";
