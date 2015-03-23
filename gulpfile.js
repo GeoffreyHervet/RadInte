@@ -3,7 +3,6 @@ var sass	= require('gulp-sass');
 var notify	= require('gulp-notify');
 var rename	= require('gulp-rename');
 var concat	= require('gulp-concat');
-var util	= require('gulp-util');
 var minCss	= require('gulp-minify-css');
 var minJs	= require('gulp-uglify');
 var include	= require('gulp-include');
@@ -27,7 +26,7 @@ gulp.task('js.clean', function(cb){
 gulp.task('sass', function () {
 	return gulp.src('sass/rad.scss')
 		.pipe(concat('rad.css'))
-		.pipe(sass()).on('error', util.log)
+		.pipe(sass()).on('error', console.log)
 		.pipe(gulp.dest('css'))
 		.pipe(notify('sass compiled'))
 	;
@@ -36,7 +35,7 @@ gulp.task('sass', function () {
 gulp.task('css.min', ['css.clean', 'css'], function(){
 	return gulp.src('css/*.css')
 		.pipe(concat('rad.min.css'))
-		.pipe(minCss()).on('error', util.log)
+		.pipe(minCss()).on('error', console.log)
 		.pipe(gulp.dest('css'))
 	;
 });
@@ -45,15 +44,15 @@ gulp.task('css.min', ['css.clean', 'css'], function(){
 gulp.task('js.rad', function(){
 	return gulp.src('js/src/rad.js')
 		.pipe(concat('rad.js'))
-		.pipe(include()).on('error', util.log).on('warning', util.log)
+		.pipe(include()).on('error', console.log).on('warning', console.log)
 		.pipe(gulp.dest('js'))
 	;
 });
 
 gulp.task('js.vendors', function(){
 	return gulp.src('js/src/vendors.js')
+		.pipe(include()).on('error', console.log).on('warning', console.log)
 		.pipe(concat('vendors.js'))
-		.pipe(include()).on('error', util.log).on('warning', util.log)
 		.pipe(gulp.dest('js'))
 	;
 });
@@ -61,7 +60,7 @@ gulp.task('js.vendors', function(){
 gulp.task('js.min', ['js.clean', 'js'], function(){
 	return gulp.src('js/*.js')
 		.pipe(rename({suffix: '.min'}))
-		.pipe(minJs()).on('error', util.log)
+		.pipe(minJs()).on('error', console.log)
 		.pipe(gulp.dest('js'))
 	;
 });
