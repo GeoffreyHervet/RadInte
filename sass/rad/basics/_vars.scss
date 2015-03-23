@@ -3,14 +3,19 @@ $icon-font-path: '/fonts/';
 
 // Colors
 $white:             #FFFFFF;
+$white-dark:        #f4f4f4;
 $black:             #000000;
 $black-light:       #272727;
 $gray-light:        #c0c0c0;
 $gray:              #878787;
 $gray-dark:         #575757;
-$gray-lighter:      #c0c0c0;
+
+$green:             #59c779;
 $red:               #ff2424;
 $pink:              #ff1e78;
+
+// Aliases
+$gray-lighter:      $gray-light;
 
 $base-font-size:    14;
 

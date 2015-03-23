@@ -1,0 +1,33 @@
+.modal-body .summary-scroll {
+    margin: 0 10px 30px;
+}
+.summary-scroll {
+    font-family: $helvetica-neue;
+    max-height: 500px;
+    .list-summary {
+        font-size: 14px;
+        strong, a {
+            color: $black;
+            padding-bottom: 5px;
+            display: block;
+        }
+        a {
+            text-transform: uppercase;
+            padding: 5px 0;
+            line-height: 15px;
+        }
+        .active {
+            strong, a {
+                color: $green;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+    .content {
+        background: $white-dark;
+        padding: 15px;
+        max-height: 100%;
+        color: $black;
+    }
+}
