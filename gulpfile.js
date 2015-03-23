@@ -51,12 +51,6 @@ gulp.task('js.rad', function(){
 });
 
 gulp.task('js.vendors', function(){
-	// cp vendor map files
-	gulp
-		.src('bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.js.map')
-		.pipe(gulp.dest('js'))
-	;
-
 	return gulp.src('js/src/vendors.js')
 		.pipe(include()).on('error', util.log).on('warning', util.log)
 		.pipe(concat('vendors.js'))
