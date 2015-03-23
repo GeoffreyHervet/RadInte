@@ -40,3 +40,23 @@
         }
     }
 }
+
+
+.grayscale {
+    -webkit-filter: grayscale(0.6);
+    -webkit-filter: grayscale(60%);
+    filter: grayscale(60%);
+    filter: gray;
+}
+.grayscale-100 {
+    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+.no-grayscale-hover:hover{
+    -webkit-filter: grayscale(0) !important;
+    -webkit-filter: grayscale(0%) !important;;
+    filter: grayscale(00%) !important;;
+    filter: gray !important;;
+}
