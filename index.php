@@ -1,9 +1,13 @@
 <?php
     $defaultPage = 'index.php';
-    $page = isset($_GET['p']) ? $_GET['p'] . 'php' : $defaultPage;
+    $page = isset($_GET['p']) ? $_GET['p'] . '.php' : $defaultPage;
     if (!in_array($page, scandir('pages'))) {
         die (header('Location: /'));
     }
+    $bodyClass = in_array($page, array(
+        'inscription.php',
+        'connexion.php'
+    )) ? 'gray' : '';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -20,7 +24,7 @@
     <link href="css/rad.css" rel="stylesheet">
 </head>
 
-<body role="document">
+<body role="document" class="<?php echo $bodyClass; ?>">
 <div id="fb-root"></div>
 <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1448799852059806&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
 <div id="site-wrapper">
