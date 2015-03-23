@@ -1,0 +1,58 @@
+.form-vertical {
+    .form-group {
+        margin-bottom: 6px;
+        padding: 0;
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea
+        {
+            background: $white;
+            color: $black;
+            height: 42px;
+            line-height: 42px;
+            text-indent: 15px;
+            width: 100%;
+            border: 1px solid $gray-light;
+            font-size: 14px;
+            &::-webkit-input-placeholder {
+                color: $gray-light
+            }
+            &::-moz-placeholder {
+                color: $gray-light;
+            }
+            &:-ms-input-placeholder {
+                color: $gray-light;
+            }
+            &:-moz-placeholder {
+                color: $gray-light;
+            }
+            &:focus {
+                @include shadow($gray-light);
+                outline: none;
+            }
+        }
+    }
+    .btn {
+        width: 100%;
+        border: none;
+        height: 42px;
+        line-height: 42px;
+        padding: 0;
+        &.btn-primary {
+            font-size: 16px;
+        }
+    }
+    .or-separator {
+        @extend .clearfix;
+        > span:first-child {
+            display: block;
+            height: 42px;
+            line-height: 42px;
+            margin-bottom: 6px;
+            color: $gray-light;
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+}
