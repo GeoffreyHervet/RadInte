@@ -1,3 +1,8 @@
 @function em($px, $base: $base-font-size) {
     @return ($px / $base) * 1em;
 }
+
+@mixin shadow($color: $gray-dark, $size: 5px) {
+    -webkit-box-shadow: 0 0 $size 0 $color;
+    box-shadow: 0 0 $size 0 $color;
+}
