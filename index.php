@@ -1,8 +1,8 @@
 <?php
-    $defaultPage = 'index';
-    $page = isset($_GET['page']) ? strval($_GET['page']) : $defaultPage;
-    if (!in_array($page . '.php', scandir('pages'))) {
-        $page = $defaultPage;
+    $defaultPage = 'index.php';
+    $page = isset($_GET['p']) ? $_GET['p'] . 'php' : $defaultPage;
+    if (!in_array($page, scandir('pages'))) {
+        die (header('Location: /'));
     }
 ?>
 <!DOCTYPE html>
@@ -17,7 +17,7 @@
 
     <title>Rad.co</title>
 
-	<link href="css/rad.css" rel="stylesheet">
+    <link href="css/rad.css" rel="stylesheet">
 </head>
 
 <body role="document">
@@ -87,6 +87,7 @@
                     </ul>
                 </li>
                 <li><a data-toggle="modal" href="modals/country.html" data-target="#default-modal">France</a></li>
+                <li><a href="?p=inscription">Inscription</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Mon compte</a>
                     <ul class="dropdown-menu dropdown-menu-left" role="menu">
@@ -111,7 +112,7 @@
         </div>
     </div>
 </nav>
-<?php require_once ('pages/' . $page . '.php'); ?>
+<?php require_once ('pages/' . $page); ?>
 
 <div class="modal fade" id="default-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
