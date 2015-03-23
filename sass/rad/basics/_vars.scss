@@ -9,13 +9,20 @@ $black-light:       #272727;
 $gray-light:        #c0c0c0;
 $gray:              #878787;
 $gray-dark:         #575757;
+$gray-disabled:     #d5d5d5;
 
+$blue:              #477eda;
 $green:             #59c779;
 $red:               #ff2424;
 $pink:              #ff1e78;
 
 // Aliases
 $gray-lighter:      $gray-light;
+
+// Disabled radius
+$border-radius-base:        0;
+$border-radius-large:       0;
+$border-radius-small:       0;
 
 $base-font-size:    14;
 
