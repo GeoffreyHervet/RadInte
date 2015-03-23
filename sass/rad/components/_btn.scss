@@ -1,9 +1,17 @@
 .btn {
     border: 1px solid $gray-dark;
     color: $gray-dark;
-    border-radius: 0;
     &.btn-white {
         border: 1px solid $white;
+        color: $white;
+    }
+
+    &.btn-black {
+        color: $white;
+        background-color: $black;
+    }
+    &.btn-primary {
+        background: $blue;
         color: $white;
     }
 }
