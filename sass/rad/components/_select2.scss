@@ -1,0 +1,65 @@
+.select2-container {
+    width: 100%;
+    @include radius(0);
+
+    .select2-choice {
+        @include radius(0);
+        background: white;
+        border-color: $gray-light;
+        > .select2-chosen {
+            font-family: $helvetica-neue;
+            font-size: 12px;
+            color: $black;
+        }
+        .select2-arrow {
+            @include radius(0);
+            border-left: none;
+            b {
+                background: $white none !important;
+                border-left: 0;
+                position: relative;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    background: url(../../../img/select2.png) no-repeat;
+                    background-position: center top;
+                    height: 4px;
+                    width: 100%;
+                    top: 50%;
+                    margin-top: -2px;
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+.select2-drop-active {
+    @include radius(0);
+    background: white;
+    border-color: $gray-light;
+}
+
+.select2-results {
+    .select2-result-label {
+        font-family: $helvetica-neue;
+        font-size: 12px;
+        color: $black;
+        .round-color {
+            margin-top: 1px;
+        }
+    }
+}
+
+.round-color {
+    width: 14px;
+    height: 14px;
+    @include radius(7px);
+    display: inline-block;
+    border: 1px solid $gray;
+    margin-top: 5px;
+    margin-right: 5px;
+    float: left;
+    -webkit-box-shadow: 0 0 1px 0 #878787;
+    box-shadow: 0 0 1px 0 #878787;
+}

@@ -1,6 +1,9 @@
 (function(){
 	$('li.dropdown').hover(function(){
-		$(this).addClass('open');
+        var $this = $(this);
+        setTimeout(function(){
+            $this.addClass('open');
+        }, 100);
 	}, function(){
 		$(this).removeClass('open');
 	});

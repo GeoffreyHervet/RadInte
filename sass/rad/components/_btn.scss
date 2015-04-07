@@ -2,8 +2,10 @@
     border: 1px solid $gray-dark;
     color: $gray-dark;
     &.btn-white {
-        border: 1px solid $white;
-        color: $white;
+        border: 1px solid $gray-light;
+        color: $gray-light;
+        background: $white;
+
     }
 
     &.btn-black {

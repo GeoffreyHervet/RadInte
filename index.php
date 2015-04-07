@@ -25,8 +25,8 @@
 </head>
 
 <body role="document" class="<?php echo $bodyClass; ?>">
-<div id="fb-root"></div>
-<script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1448799852059806&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+<!--<div id="fb-root"></div>-->
+<!--<script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1448799852059806&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>-->
 <div id="site-wrapper">
 
 <nav class="navbar navbar-fixed-top">
@@ -64,8 +64,8 @@
                                 <strong class="price text-white">19,90 €</strong>
                                 <span class="price text-gray stroke-gray">29,90 €</span>
                                 <span class="title">
-                                    Fuck christmas sweater
-                                    <span class="specs">Fuck christmas sweater</span>
+                                    Happy christmas sweater
+                                    <span class="specs">Happy christmas sweater</span>
                                 </span>
                             </a>
                         </li>
@@ -74,8 +74,8 @@
                                 <img src="img/tmp/product-cart-54x54.jpg" alt="Mon produit de fou" />
                                 <span class="price text-white">19,90 €</span>
                                 <span class="title">
-                                    Fuck christmas sweater
-                                    <span class="specs">Fuck christmas sweater</span>
+                                    Happy christmas sweater
+                                    <span class="specs">Happy christmas sweater</span>
                                 </span>
                             </a>
                         </li>
@@ -127,14 +127,16 @@
 
 
 <footer class="fixed-footer">
-    <ul>
-        <li><a class="text-black" data-toggle="modal" href="modals/service-client.html" data-target="#default-modal">Service client</a></li>
-        <li><a class="text-gray" href="#">Presse</a></li>
-        <li><a class="text-gray" href="#">Newsletter</a></li>
-        <li><a class="text-gray" href="#">Recrutement</a></li>
-        <li><a class="text-gray" href="#">Suivez-nous</a></li>
-        <li><div class="fb-like" data-href="https://www.facebook.com/rad" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div></li>
-    </ul>
+    <div class="container">
+        <ul>
+            <li><a class="text-black" data-toggle="modal" href="modals/service-client.html" data-target="#default-modal">Service client</a></li>
+            <li><a class="text-gray" href="#">Presse</a></li>
+            <li><a class="text-gray" href="#">Newsletter</a></li>
+            <li><a class="text-gray" href="#">Recrutement</a></li>
+            <li><a class="text-gray" href="#">Suivez-nous</a></li>
+            <li><div class="fb-like" data-href="https://www.facebook.com/rad" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div></li>
+        </ul>
+    </div>
 </footer>
 </div>
 <script src="js/vendors.js"></script>

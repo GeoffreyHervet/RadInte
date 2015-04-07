@@ -1,5 +1,5 @@
 <div itemscope itemtype="http://schema.org/Product" data-kind="<?php echo $kind; ?>">
-    <a href="?p=product" class="product">
+    <a href="?p=product-gift" class="product">
         <span class="gift-img">
             <img  itemprop="image" src="img/tmp/gift-list-250x325.jpg" alt="Garte cadeau" class="grayscale no-grayscale-hover"/>
             <span class="text-gift">

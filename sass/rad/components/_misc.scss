@@ -41,6 +41,11 @@
     }
 }
 
+.sticky {
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+}
+
 
 .grayscale {
     -webkit-filter: grayscale(0.6);

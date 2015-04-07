@@ -199,6 +199,9 @@
         }
     }
 }
+.nav > li > a:hover, .nav > li > a:focus, .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background: none;
+}
 
 
 div.text-top {
