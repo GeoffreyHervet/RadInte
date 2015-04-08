@@ -16,6 +16,7 @@
         <div class="thumbnails">&nbsp;<div class="clearfix"></div></div>
         <div class="infos">
             <div class="bg-white-dark">
+                <br />
                 <form action="" method="post" class="product-buy product-gift">
                     <div class="form-group">
                         <label class="control-label">Prix</label>

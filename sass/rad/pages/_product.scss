@@ -21,8 +21,46 @@
             float: left;
             margin-right: 1.5%;
             width: 9.4%;
+            .prev, .next {
+                display: block;
+                cursor: pointer;
+                height: 52px;
+                position: relative;
+                &:before {
+                    content: '';
+                    background: url(../../../img/arrows.png) no-repeat 0 0;
+                    width: 13px;
+                    height: 7px;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    margin-left: -7px;
+                    margin-top: -3.5px;
+                }
+            }
+            .prev:before {
+                background-position: -14px 0;
+            }
+            .next:before {
+                background-position: -14px -7px;
+            }
             li {
                 margin-bottom: 10px;
+                position: relative;
+                &:hover:before,
+                &.active:before {
+                    position: absolute;
+                    display: block;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    top: 0;
+                    background: rgba(0,0,0,0.3);
+                    content: '';
+                }
+                &:hover:before {
+                    background: rgba(0,0,0,0.1);
+                }
             }
         }
         > .infos {

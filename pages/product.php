@@ -3,8 +3,9 @@
     <h1 class="page-title text-underline text-center">Vers l'infini et au delà</h1>
     <div class="content product">
         <div class="img-big">
-            <img src="img/tmp/product-large-385x505.jpg" class="hidden-xs img-responsive" alt="Image du produit" title="Vers l'infini et au dela (petit bateau)" />
-            <a class="hidden-sm hidden-lg hidden-md" href="img/tmp/product-large-385x505.jpg" target="_blank"><img src="img/tmp/product-large-385x505.jpg" class="img-responsive" alt="Image du produit" title="Vers l'infini et au dela (petit bateau)" /></a>
+            <div class="img-wrapper" data-zoom-image="img/tmp/product-original-1376x2064.jpg">
+                <img src="img/tmp/product-large-385x505.jpg" class="img-responsive" alt="Image du produit" title="Vers l'infini et au dela (petit bateau)" />
+            </div>
             <div class="legend hidden-xs">
                 <div class="pull-left">Passer la souris pour zoomer</div>
                 <a class="pull-right text-bold text-underline text-black">Voir l'image taille réelle</a>
@@ -14,11 +15,20 @@
             </div>
         </div>
         <div class="thumbnails">
-            <ul class="thumbnails list-unstyled">
-                <li><a title="Aperçu de la photographie" href="img/tmp/product-small-85x110.jpg" data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></a></li>
-                <li><a title="Aperçu de la photographie" href="img/tmp/product-small-85x110.jpg" data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></a></li>
-                <li><a title="Aperçu de la photographie" href="img/tmp/product-small-85x110.jpg" data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></a></li>
-            </ul>
+            <div class="prev"></div>
+            <div class="carousel">
+                <ul class="list-unstyled">
+                    <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>
+                    <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>
+                    <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>
+                    <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>
+                    <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>
+                    <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>
+                    <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>
+                    <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>
+                </ul>
+            </div>
+            <div class="next"></div>
         </div>
         <div class="infos">
             <div class="bg-white-dark">
@@ -115,54 +125,56 @@
                 </div>
             </div>
             <div class="see-more">
-                <div class="carousel slide carousel-brand" id="carousel-brand">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="content">
-                                <a href="#"><img src="img/tmp/product-medium-112x146.jpg" class="img-responsive"></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content">
-                                <a href="#"><img src="img/tmp/product-medium-112x146.jpg" class="img-responsive"></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content">
-                                <a href="#"><img src="img/tmp/product-medium-112x146.jpg" class="img-responsive"></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content">
-                                <a href="#"><img src="img/tmp/product-medium-112x146.jpg" class="img-responsive"></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content">
-                                <a href="#"><img src="img/tmp/product-medium-112x146.jpg" class="img-responsive"></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content">
-                                <a href="#"><img src="img/tmp/product-medium-112x146.jpg" class="img-responsive"></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content">
-                                <a href="#"><img src="img/tmp/product-medium-112x146.jpg" class="img-responsive"></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="content">
-                                <a href="#"><img src="img/tmp/product-medium-112x146.jpg" class="img-responsive"></a>
-                            </div>
-                        </div>
+                <div class="slide carousel-brand">
+                    <div>
+                        <ul class="list-unstyled">
+                            <li><a href="javascript:;"><img src="img/tmp/product-medium-112x146.jpg" class="img-responsive"/></a></li>
+                            <li><a href="javascript:;"><img src="img/tmp/product2-medium-112x146.jpg" class="img-responsive"/></a></li>
+                            <li><a href="javascript:;"><img src="img/tmp/product-medium-112x146.jpg" class="img-responsive"/></a></li>
+                            <li><a href="javascript:;"><img src="img/tmp/product2-medium-112x146.jpg" class="img-responsive"/></a></li>
+                            <li><a href="javascript:;"><img src="img/tmp/product-medium-112x146.jpg" class="img-responsive"/></a></li>
+                            <li><a href="javascript:;"><img src="img/tmp/product2-medium-112x146.jpg" class="img-responsive"/></a></li>
+                            <li><a href="javascript:;"><img src="img/tmp/product-medium-112x146.jpg" class="img-responsive"/></a></li>
+                            <li><a href="javascript:;"><img src="img/tmp/product2-medium-112x146.jpg" class="img-responsive"/></a></li>
+                        </ul>
+                        <div class="clearfix"></div>
                     </div>
-                    <a class="right carousel-control" href="#carousel-brand" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                    <div class="next-brand"></div>
                 </div>
                 <p class="see-more">Voir les autres produits de <a class="text-underline">Adieu et à demain</a></p>
             </div>
         </div>
     </div>
 </div>
+
+
+<!--    <div class="thumbnails jcarousel-skin-tango jcarousel">-->
+<!--        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>-->
+<!--        <a href="#" class="jcarousel-control-next">&rsaquo;</a>-->
+<!--        <ul id="thumbnails-carousel" class="list-unstyled">-->
+<!--            <li><a title="Aperçu de la photographie" href="img/tmp/product2-small-85x110.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></a></li>-->
+<!--            <li><a title="Aperçu de la photographie" href="img/tmp/product-small-85x110.jpg" data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></a></li>-->
+<!--            <li><a title="Aperçu de la photographie" href="img/tmp/product2-small-85x110.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></a></li>-->
+<!--            <li><a title="Aperçu de la photographie" href="img/tmp/product-small-85x110.jpg" data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></a></li>-->
+<!--            <li><a title="Aperçu de la photographie" href="img/tmp/product2-small-85x110.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></a></li>-->
+<!--            <li><a title="Aperçu de la photographie" href="img/tmp/product-small-85x110.jpg" data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></a></li>-->
+<!--            <li><a title="Aperçu de la photographie" href="img/tmp/product2-small-85x110.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></a></li>-->
+<!--            <li><a title="Aperçu de la photographie" href="img/tmp/product-small-85x110.jpg" data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></a></li>-->
+<!--            <li><a title="Aperçu de la photographie" href="img/tmp/product2-small-85x110.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></a></li>-->
+<!--            <li><a title="Aperçu de la photographie" href="img/tmp/product-small-85x110.jpg" data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!---->
+<!--    <div class="carousel">-->
+<!--        <ul class="list-unstyled">-->
+<!--            <li><img src="img/tmp/product2-small-85x110.jpg" alt="1"></li>-->
+<!--            <li><img src="img/tmp/product-small-85x110.jpg" alt="2"></li>-->
+<!--            <li><img src="img/tmp/product2-small-85x110.jpg" alt="1"></li>-->
+<!--            <li><img src="img/tmp/product-small-85x110.jpg" alt="2"></li>-->
+<!--            <li><img src="img/tmp/product2-small-85x110.jpg" alt="1"></li>-->
+<!--            <li><img src="img/tmp/product-small-85x110.jpg" alt="2"></li>-->
+<!--            <li><img src="img/tmp/product2-small-85x110.jpg" alt="1"></li>-->
+<!--            <li><img src="img/tmp/product-small-85x110.jpg" alt="2"></li>-->
+<!--        </ul>-->
+<!--    </div>-->
 <?php require 'pages/category.php'; ?>

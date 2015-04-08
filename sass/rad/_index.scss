@@ -4,7 +4,6 @@
 
 // Dependencies
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "../../bower_components/select2/select2.css";
 
 // Import all reusable components
 @import "components/colors";
@@ -19,6 +18,8 @@
 @import "components/select2";
 @import "components/tooltip";
 @import "components/share";
+@import "components/jcarousel";
+@import "components/fancybox";
 
 @import "components/header";
 @import "components/categories-nav";

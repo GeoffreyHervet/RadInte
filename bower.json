@@ -16,11 +16,13 @@
     "tests"
   ],
   "dependencies": {
+    "jquery": "~1.11",
     "bootstrap-sass": "~3.3.4",
     "jquery-scrollpanel": "~0.5.0",
-    "elevatezoom": "~2.2.3",
     "select2": "~3.5.2",
     "pinchzoom": "~1.0.0",
-    "jcarousel": "~0.3.3"
+    "jcarousellite": "~1.9.3",
+    "jquery-zoom": "~1.7.14",
+    "fancybox": "~2.1.5"
   }
 }
