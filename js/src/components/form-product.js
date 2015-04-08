@@ -29,12 +29,10 @@
         }
 
         $zoomImg.click(function(){
-            console.log('ICI');
             var imgs = [];
             $container.find('[data-big]').each(function(){
                 imgs.push($(this).attr('data-big'));
             });
-            console.log(imgs);
             $.fancybox(imgs, {
                 wrapCSS: 'fancy-product',
                 closeBtn: true,
