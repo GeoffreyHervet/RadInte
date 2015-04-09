@@ -102,6 +102,11 @@ $shadow: rgba(0,0,0,0.4);
         width: 100%;
         -webkit-transition: margin-left $animation-duration;
         transition: margin-left $animation-duration;
+
+    }
+
+    .container.top10-mobile{
+        padding-top: 10px;
     }
 
     html.nav-left,html.nav-right {

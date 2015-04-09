@@ -10,7 +10,7 @@
     )) ? 'gray' : '';
 ?>
 <!DOCTYPE html>
-<html lang="fr" class="nav-left">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,6 +22,13 @@
     <title>Rad.co</title>
 
     <link href="css/rad.css" rel="stylesheet">
+    <!--[if gte IE 9]>
+    <style type="text/css">
+        .gradient {
+            filter: none;
+        }
+    </style>
+    <![endif]-->
 </head>
 
 <body role="document" class="<?php echo $bodyClass; ?>">
@@ -120,6 +127,14 @@
 <div class="modal fade" id="default-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade video-modal" id="video-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+            <div class="modal-body"></div>
         </div>
     </div>
 </div>
