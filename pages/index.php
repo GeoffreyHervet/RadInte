@@ -69,7 +69,7 @@
             </span>
         </span>
     </a>
-    <a class="med-image img-text" href="javascript:;" data-video="https://www.youtube.com/v/0JdB_mjpJwA?autoplay=1">
+    <a class="med-image img-text" href="https://www.youtube.com/watch?feature=player_embedded&v=0JdB_mjpJwA" data-video="https://www.youtube.com/v/0JdB_mjpJwA?autoplay=1">
         <img src="img/tmp/cover-emmerdeuse-505x505.jpg" alt="Nouvelle collection" />
         <span class="play-video"></span>
     </a>
