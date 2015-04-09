@@ -102,10 +102,15 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Mon compte</a>
                     <ul class="dropdown-menu dropdown-menu-left" role="menu">
-                        <li><a href="#">Profil</a></li>
-                        <li><a href="#">Commandes</a></li>
-                        <li><a href="#">Crédits d'achat</a></li>
-                        <li><a href="#">Déconnexion</a></li>
+                        <?php
+                            foreach (scandir('pages') as $file) {
+                                if ($file[0] == '.') {
+                                    continue;
+                                }
+                                $name = explode('.', $file);
+                                echo '<li><a href="?p='. $name[0] .'">'. ucfirst($name[0]) .'</a></li>';
+                            }
+                        ?>
                     </ul>
                 </li>
                 <li style="color: #ffffff">

@@ -4,13 +4,13 @@
     <div class="row" itemtype="http://schema.org/ItemList">
         <meta itemprop="numberOfItems" content="315" />
         <?php for ($i = 0; $i < 11; $i++) { ?>
-            <div class="col-md-3 col-sm-4 col-xs-6">
+            <div class="col-md-3 col-sm-4 col-xs-12">
                 <div class="item">
                     <?php include 'blocks/product.php'; ?>
                 </div>
             </div>
         <?php } ?>
-        <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="col-md-3 col-sm-4 col-xs-12">
             <div class="item">
                 <?php include 'blocks/product-gift.php'; ?>
             </div>
