@@ -8,3 +8,4 @@ js/*.js
 js/*.map
 node_modules
 bower_components
+.ht*
