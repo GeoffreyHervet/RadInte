@@ -95,7 +95,7 @@
         <span class="btn btn-black shop-now">Acheter maintenant</span>
     </a>
     <a class="img-text img-vertical no-left" href="#">
-        <img class="hidden-xs" src="img/tmp/cover-2on3-332x471.jpg" alt="Nouvelle collection" />
+        <img class="hidden-xs" src="img/tmp/cover-3on3-332x471.jpg" alt="Nouvelle collection" />
         <img class="visible-xs" src="img/tmp/cover-3on3-332x274.jpg" alt="Nouvelle collection" />
         <h3>Christmas Shop</h3>
         <h4>#parfaitpourlescadeaux</h4>
