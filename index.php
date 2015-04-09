@@ -2,6 +2,7 @@
     $defaultPage = 'index.php';
     $page = isset($_GET['p']) ? $_GET['p'] . '.php' : $defaultPage;
     if (!in_array($page, scandir('pages'))) {
+        die ('NO PAGE');
         die (header('Location: /'));
     }
     $bodyClass = in_array($page, array(
@@ -10,7 +11,7 @@
     )) ? 'gray' : '';
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"<?php if (isset($_GET['left'])) echo ' class="nav-left"';?>>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -122,6 +123,7 @@
         </div>
     </div>
 </nav>
+
 <?php require_once ('pages/' . $page); ?>
 
 <div class="modal fade" id="default-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

@@ -1,3 +1,6 @@
+<div class="visible-xs">
+    <?php require_once 'blocks/menu.php'; ?>
+</div>
 <div class="container">
 
     <div class="page-title text-center">

@@ -2,6 +2,9 @@
 
 (function(){
     var menu = $('#sticky-category');
+    if (!menu.length) {
+        return ;
+    }
     var stickyTop = menu.offset().top;
     var offsetTop = $('.navbar.navbar-fixed-top').height();
     var $body = $('body');
