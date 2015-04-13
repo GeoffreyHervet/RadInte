@@ -4,6 +4,7 @@
 
 // Dependencies
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../bower_components/swiper/dist/css/swiper.css";
 
 // Import all reusable components
 @import "components/colors";
@@ -22,6 +23,8 @@
 @import "components/fancybox";
 @import "components/navbar";
 @import "components/menu_responsive";
+@import "components/fast-buy";
+@import "components/swiper";
 
 @import "components/header";
 @import "components/categories-nav";
@@ -32,3 +35,4 @@
 @import "pages/home";
 @import "pages/category";
 @import "pages/product";
+@import "pages/book";

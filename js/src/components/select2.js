@@ -1,13 +1,24 @@
 ; 'use strict';
 (function(){
-    $('[data-select2-enabled]').each(function(){
-        var opts = {};
-        var $this = $(this);
+    var was_init = false;
+    Rad.prototype.select2Enabled = function() {
+        $('[data-select2-enabled]').each(function () {
+            var opts = {};
+            var $this = $(this);
 
-        if ($this.attr('data-nosearch')) {
-            opts.minimumResultsForSearch = Infinity;
-        }
+            if (was_init) {
+                $this.select2('destroy');
+            }
 
-        $(this).select2(opts);
-    });
+            was_init = true;
+
+            if ($this.attr('data-nosearch')) {
+                opts.minimumResultsForSearch = Infinity;
+            }
+
+            $(this).select2(opts);
+        });
+    };
+
+    rad.select2Enabled();
 })();

@@ -56,3 +56,9 @@
         }
     }
 }
+
+input.form-error,textarea.form-error {
+    border: 1px solid $red !important;
+    -webkit-box-shadow: 0 0 5px 0 $red !important;
+    box-shadow: 0 0 5px 0 $red !important;
+}

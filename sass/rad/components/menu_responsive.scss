@@ -4,63 +4,77 @@ $animation-duration: 0.4s;
 $shadow: rgba(0,0,0,0.4);
 
 @media (max-width: 767px) {
+    nav.categories {
+        li.dropdown {
+            a {
+                position: relative;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    background: url(../../../img/arrows.png) no-repeat -40px 0px;
+                    height: 14px;
+                    width: 13px;
+                    right: 10px;
+                    top: 50%;
+                    margin-top: -7px;
+                }
+            }
+            ul {
+                box-shadow: inset -7px 0 9px -7px $shadow;
+                background: #f3f3f3;
+                > li:first-child {
+                    box-shadow: inset 0 7px 9px -7px $shadow;
+                }
+                > li:last-child {
+                    box-shadow: inset 0 -7px 9px -7px $shadow;
+                }
+                > li {
+                    a {
+                        padding: 9px 0;
+                        text-transform: none;
+                        font-size: 13px;
+                        font-family: $helvetica;
+                    }
+                    a:hover, a:focus {
+                        background: none;
+                    }
+                    a:after {
+                        background-position: -7px 0px;
+                        width: 7px;
+                        right: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .container.top10-mobile {
+        padding-top: 10px;
+    }
+
+    html.nav-left, html.nav-right {
+        body {
+            overflow-x: hidden;
+        }
+    }
+
     html.nav-left {
         nav.categories {
             overflow: scroll-y;
             -webkit-box-shadow: inset -7px 0 9px -7px $shadow;
-                    box-shadow: inset -7px 0 9px -7px $shadow;
+            box-shadow: inset -7px 0 9px -7px $shadow;
             left: 0;
             width: $medium-width;
             @media (max-width: 500px) {
                 width: $small-width;
             }
-            li.dropdown {
-                a {
-                    position: relative;
-                    &:after {
-                        position: absolute;
-                        content: '';
-                        background: url(../../../img/arrows.png) no-repeat -40px 0px;
-                        height: 14px;
-                        width: 13px;
-                        right: 10px;
-                        top: 50%;
-                        margin-top: -7px;
-                    }
-                }
-                ul {
-                    box-shadow: inset -7px 0 9px -7px $shadow;
-                    background: #f3f3f3;
-                    > li:first-child {
-                        box-shadow: inset 0 7px 9px -7px $shadow;
-                    }
-                    > li:last-child {
-                        box-shadow: inset 0 -7px 9px -7px $shadow;
-                    }
-                    > li {
-                        a {
-                            padding: 9px 0;
-                            text-transform: none;
-                            font-size: 13px;
-                            font-family: $helvetica;
-                        }
-                        a:hover, a:focus {
-                            background: none;
-                        }
-                        a:after {
-                            background-position: -7px 0px;
-                            width: 7px;
-                            right: 12px;
-                        }
-                    }
-                }
-            }
         }
 
         #site-wrapper, .navbar-fixed-top {
-            margin-left: $medium-width;
+            position: fixed;
+            left: $medium-width;
             @media (max-width: 500px) {
-                margin-left: $small-width;
+                left: $small-width;
             }
         }
     }
@@ -73,9 +87,6 @@ $shadow: rgba(0,0,0,0.4);
             @media (max-width: 500px) {
                 width: $small-width;
             }
-
-            -webkit-box-shadow: inset 7px 0 9px -7px $shadow;
-                    box-shadow: inset 7px 0 9px -7px $shadow;
         }
 
         #site-wrapper, .navbar-fixed-top {
@@ -90,6 +101,7 @@ $shadow: rgba(0,0,0,0.4);
         left: -100%;
         -webkit-transition: left $animation-duration;
         transition: left $animation-duration;
+        background: white;
     }
 
     .navbar .navbar-right {
@@ -99,22 +111,9 @@ $shadow: rgba(0,0,0,0.4);
 
     #site-wrapper, .navbar-fixed-top {
         margin-left: 0;
+        left: 0;
         width: 100%;
-        -webkit-transition: margin-left $animation-duration;
-        transition: margin-left $animation-duration;
-
-    }
-
-    .container.top10-mobile{
-        padding-top: 10px;
-    }
-
-    html.nav-left,html.nav-right {
-        body {
-            overflow-x: hidden;
-        }
-        #site-wrapper {
-            overflow: hidden;
-        }
+        -webkit-transition: margin-left $animation-duration, left $animation-duration;
+        transition: margin-left $animation-duration, left $animation-duration;
     }
 }

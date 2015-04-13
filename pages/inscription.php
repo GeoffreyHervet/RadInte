@@ -1,11 +1,12 @@
+<div class="visible-xs">
+    <?php require_once 'blocks/menu.php'; ?>
+</div>
 <div class="container">
-
     <div class="page-title text-center">
         <a href="./" class="back pull-left"><i class="glyphicon glyphicon-arrow-left"></i> retour</a>
-        <a href="?p=connexion" class="text-gray-disabled">Connexion</a>
+        <a href="?p=connexion" class="text-gray-disabled text-underline-hover"><span>Connexion</span></a>
         Inscription
     </div>
-
     <div class="row">
         <form role="form" action="" method="post" class="form-vertical col-md-4 col-md-offset-4">
             <?php if (isset($_POST) && count($_POST)) { ?>

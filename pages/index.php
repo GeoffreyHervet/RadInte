@@ -1,5 +1,4 @@
 <?php require_once 'blocks/menu.php'; ?>
-
 <div class="container top10-mobile">
     <a class="big-image img-text" href="javascript:;">
         <img class="hidden-xs" src="img/tmp/cover-madame-jalouse-1020x492.jpg" alt="Nouvelle collection" />
@@ -44,14 +43,15 @@
         </span>
     </a>
     <a class="med-image img-text" href="javascript:;">
-        <video autoplay loop>
+        <video class="hidden-xs" autoplay loop>
             <source src="img/tmp/nature_register_470x470.mp4" type="video/mp4">
             <source src="img/tmp/nature_register_470x470.webm" type="video/webm">
         </video>
+        <img class="visible-xs" src="img/tmp/cover-just-do-nothing-505x505.jpg" alt="Nouvelle collection" />
         <span class="table-wrap">
             <span class="text-wrap">
                 <span class="texts">
-                    <span class="btn btn-black shop-now">dadasd Acheter maintenant</span>
+                    <span class="btn btn-black shop-now">Acheter maintenant</span>
                 </span>
             </span>
         </span>

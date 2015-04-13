@@ -19,6 +19,10 @@ form.product-buy {
             line-height: 22px;
             font-size: 20px;
             color: $black;
+            @media (max-width: 676px) {
+                float: none;
+                text-align: center;
+            }
             .old-price {
                 color: $gray;
                 position: relative;
@@ -36,9 +40,35 @@ form.product-buy {
             }
         }
 
+        @media (max-width: 767px) {
+            .size-help {
+                text-transform: none;
+                display: inline !important;
+                float: right;
+            }
+        }
+
         .sizes, .colors, .quantity {
             float: left;
             width: 46%;
+            @media (max-width: 767px) {
+                width: 100%;
+                float: none;
+                .quantity-wrapper {
+                    width: 76px;
+                    margin: auto;
+                    float: none;
+                    display: block;
+                    .minus, .plus {
+                        font-size: 19px;
+                        font-weight: normal;
+                    }
+                    .quantity-value {
+                        font-size: 17px;
+                        font-weight: normal;
+                    }
+                }
+            }
         }
         .quantity {
             .minus, .plus {
@@ -116,6 +146,10 @@ form.product-buy {
             width: 100%;
             input, textarea {
                 width: 69%;
+                @media (max-width: 767px) {
+                    width: 100%;
+                    float: none;
+                }
                 line-height: 34px;
                 height: 34px;
                 text-indent: 10px;

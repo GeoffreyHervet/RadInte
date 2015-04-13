@@ -1,20 +1,29 @@
 <?php require_once 'blocks/menu.php' ?>
 <div class="container product-buy-container" itemscope itemtype="http://schema.org/Product">
-    <h1 class="page-title text-underline text-center">Vers l'infini et au delà</h1>
+    <h1 class="page-title text-underline-bottom text-center"><span>Vers l'infini et au delà</span></h1>
     <div class="content product">
-        <div class="img-big">
+        <div class="img-big hidden-xs">
             <div class="img-wrapper" data-zoom-image="img/tmp/product-original-1376x2064.jpg">
                 <img src="img/tmp/product-large-385x505.jpg" class="img-responsive" alt="Image du produit" title="Vers l'infini et au dela (petit bateau)" />
             </div>
             <div class="legend hidden-xs">
                 <div class="pull-left">Passer la souris pour zoomer</div>
-                <a class="pull-right text-bold text-underline text-black">Voir l'image taille réelle</a>
+                <a class="pull-right text-bold text-underline text-black" id="show-big">Voir l'image taille réelle</a>
             </div>
             <div class="legend hidden-sm hidden-lg hidden-md">
                 <div class="pull-left"><a href="img/tmp/product-large-385x505.jpg" target="_blank" class="text-black">Cliquez pour afficher l'image</a></div>
             </div>
         </div>
-        <div class="thumbnails">
+        <div class="img-big visible-xs">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/tmp/product-original-1376x2064.jpg" /></div>
+                    <div class="swiper-slide"><img src="img/tmp/product2-original-1376x2064.jpg" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="thumbnails hidden-xs">
             <div class="prev"></div>
             <div class="carousel">
                 <ul class="list-unstyled">
@@ -78,15 +87,15 @@
                     <div class="form-group">
                         <label class="control-label" for="color-choice">Couleur</label>
                         <div class="colors">
-                            <select class="" name="color" id="color-choice">
-                                <option value="1" data-color="#000000"><span style="font-weight: bold;">OK </span>Noir</option>
+                            <select class="" name="color" id="color-choice" data-color-choice>
+                                <option value="1" data-color="#000000">Noir</option>
                                 <option value="2" data-color="#ffffff">Blanc</option>
                                 <option value="3" data-color="#1E90FF">Bleu marine</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label" for="size-choice">Taille</label>
+                        <label class="control-label" for="size-choice">Taille <a class="visible-xs size-help text-black" href="javascript:;">Guide</a></label>
                         <div class="sizes">
                             <select class="select2-item" name="color" id="size-choice" data-nosearch="1" data-select2-enabled data-empty="Merci de selectionner une taille">
                                 <option value="">Sélectionnez une taille</option>
@@ -103,13 +112,15 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label" for="quantity-choice">Taille</label>
+                        <label class="control-label" for="quantity-choice">Quantité</label>
                         <div class="quantity">
-                            <span class="minus disabled">&lt;</span>
-                            <span id="qty-show" class="quantity-value">1</span>
-                            <input type="hidden" id="qty-value" value="1"/>
-                            <span class="plus">&gt;</span>
-                            <a href="javascript:;">Guide des tailles</a>
+                            <div class="quantity-wrapper">
+                                <span class="minus disabled">&lt;</span>
+                                <span data-qty-show class="quantity-value">1</span>
+                                <input type="hidden" data-qty-value value="1"/>
+                                <span class="plus">&gt;</span>
+                                <a class="hidden-xs" href="javascript:;">Guide des tailles</a>
+                            </div>
                         </div>
                     </div>
                     <div class="form-group form-submit-wrapper">

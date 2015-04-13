@@ -9,7 +9,8 @@
     <meta itemprop="image" content="img/tmp/product-list-250x325.jpg" />
 
     <a href="?p=product" class="product">
-        <img  itemprop="image" src="img/tmp/product-list-250x325.jpg" alt="Executive Anvil logo" class="grayscale<?php if($kind == 'gone') echo '-100'; ?> no-grayscale-hover"/>
+        <img  itemprop="image" class="hidden-xs" src="img/tmp/product-list-250x325.jpg" alt="Executive Anvil logo"/>
+        <img  itemprop="image" class="visible-xs" src="img/tmp/product-list-cell-250x254.jpg" alt="Executive Anvil logo"/>
         <span itemprop="name" class="name">Vers l’infini et au delà t-shirt</span>
         <span class="price" itemprop="price" content="29.90">
             <?php if ($kind == 'promo') { ?>
@@ -25,8 +26,8 @@
     </a>
     <?php if ($kind != 'gone') { ?>
         <div class="btn-actions text-uppercase">
-            <a class="fast-buy" href="./">Achat rapide</a>
-            <a class="save" href="./">Sauvegarder</a>
+            <a class="fast-buy text-underline-hover" data-toggle="modal" href="modals/fast-buy.html" data-target="#fast-buy"><span>Achat rapide</span></a>
+            <a class="save text-underline-hover" href="./"><span>Sauvegarder</span></a>
             <div class="clearfix"></div>
         </div>
     <?php } ?>
