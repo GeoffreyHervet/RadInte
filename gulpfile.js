@@ -27,7 +27,7 @@ gulp.task('js.clean', function(cb){
 gulp.task('sass', function () {
 	return gulp.src('sass/rad.scss')
 		.pipe(concat('rad.css'))
-		.pipe(sass({errLogToConsole: true}))
+		.pipe(sass({errLogToConsole: true, sourcemap: true}))
 		.pipe(gulp.dest('css'))
 		.pipe(notify('sass compiled'))
 	;

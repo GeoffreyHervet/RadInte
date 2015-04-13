@@ -15,16 +15,16 @@
             </div>
         </div>
         <div class="img-big visible-xs">
-            <ul class="list-unstyled">
-                <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>
-                <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>
-                <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>
-                <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>
-                <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>
-                <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>
-                <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>
-                <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>
-            </ul>
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/tmp/product-original-1376x2064.jpg" /></div>
+                    <div class="swiper-slide"><img src="img/tmp/product2-original-1376x2064.jpg" /></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
         <div class="thumbnails hidden-xs">
             <div class="prev"></div>
@@ -98,7 +98,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label" for="size-choice">Taille</label>
+                        <label class="control-label" for="size-choice">Taille <a class="visible-xs size-help text-black" href="javascript:;">Guide</a></label>
                         <div class="sizes">
                             <select class="select2-item" name="color" id="size-choice" data-nosearch="1" data-select2-enabled data-empty="Merci de selectionner une taille">
                                 <option value="">Sélectionnez une taille</option>
@@ -117,11 +117,13 @@
                     <div class="form-group">
                         <label class="control-label" for="quantity-choice">Quantité</label>
                         <div class="quantity">
-                            <span class="minus disabled">&lt;</span>
-                            <span id="qty-show" class="quantity-value">1</span>
-                            <input type="hidden" id="qty-value" value="1"/>
-                            <span class="plus">&gt;</span>
-                            <a href="javascript:;">Guide des tailles</a>
+                            <div class="quantity-wrapper">
+                                <span class="minus disabled">&lt;</span>
+                                <span id="qty-show" class="quantity-value">1</span>
+                                <input type="hidden" id="qty-value" value="1"/>
+                                <span class="plus">&gt;</span>
+                                <a class="hidden-xs" href="javascript:;">Guide des tailles</a>
+                            </div>
                         </div>
                     </div>
                     <div class="form-group form-submit-wrapper">
