@@ -1,15 +1,17 @@
+
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 col-xs-12 no-right-xs">
         <div class="img-slider text-center">
             <div class="fast-buy-prev-img"></div>
-            <img src="img/tmp/product-large-385x505.jpg" data-display />
+            <img src="img/tmp/product-large-385x505.jpg" style="width: 100%" data-display />
             <div class="fast-buy-next-img"></div>
             <div data-imgs class="hide">
                 <img src="img/tmp/product2-large-385x505.jpg" />
             </div>
         </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 col-xs-12 no-right-xs">
         <div class="bg-white-dark">
             <div class="infos">
                 <form action="" method="post" class="product-buy">
@@ -51,8 +53,8 @@
                         <label class="control-label">Quantité</label>
                         <div class="quantity">
                             <span class="minus disabled">&lt;</span>
-                            <span id="qty-show" class="quantity-value">1</span>
-                            <input type="hidden" id="qty-value" value="1"/>
+                            <span data-qty-show class="quantity-value">1</span>
+                            <input type="hidden" data-qty-value value="1"/>
                             <span class="plus">&gt;</span>
                         </div>
                     </div>

@@ -146,6 +146,10 @@ form.product-buy {
             width: 100%;
             input, textarea {
                 width: 69%;
+                @media (max-width: 767px) {
+                    width: 100%;
+                    float: none;
+                }
                 line-height: 34px;
                 height: 34px;
                 text-indent: 10px;

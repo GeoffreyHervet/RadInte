@@ -35,6 +35,12 @@
             }
         }
     }
+
+    &.form-error .select2-choice {
+        border: 1px solid $red;
+        -webkit-box-shadow: 0 0 5px 0 $red;
+        box-shadow: 0 0 5px 0 $red;
+    }
 }
 .select2-drop-active {
     @include radius(0);

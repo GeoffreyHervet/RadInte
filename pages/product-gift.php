@@ -5,13 +5,6 @@
         <div class="img-big">
             <img src="img/tmp/product-large-385x505.jpg" class="hidden-xs img-responsive" alt="Image du produit" title="Vers l'infini et au dela (petit bateau)" />
             <a class="hidden-sm hidden-lg hidden-md" href="img/tmp/product-large-385x505.jpg" target="_blank"><img src="img/tmp/product-large-385x505.jpg" class="img-responsive" alt="Image du produit" title="Vers l'infini et au dela (petit bateau)" /></a>
-            <div class="legend hidden-xs">
-                <div class="pull-left">Passer la souris pour zoomer</div>
-                <a class="pull-right text-bold text-underline text-black">Voir l'image taille réelle</a>
-            </div>
-            <div class="legend hidden-sm hidden-lg hidden-md">
-                <div class="pull-left"><a href="img/tmp/product-large-385x505.jpg" target="_blank" class="text-black">Cliquez pour afficher l'image</a></div>
-            </div>
         </div>
         <div class="thumbnails">&nbsp;<div class="clearfix"></div></div>
         <div class="infos">
@@ -62,7 +55,7 @@
                     <div class="form-group full-width">
                         <label class="control-label" for="email">Adresse e-mail du bénéficiaire</label>
                         <div class="content">
-                            <input type="text" name="address" id="address" data-empty="Merci de renseigner l'adress" placeholder="Entrez l'adresse"/>
+                            <input type="text" name="address" id="address" data-empty="Merci de renseigner l'adresse" placeholder="Entrez l'adresse"/>
                         </div>
                     </div>
                     <div class="form-group full-width">

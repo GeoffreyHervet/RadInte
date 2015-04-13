@@ -58,6 +58,12 @@
     height: 40px;
 }
 
+@media (max-width: 767px) {
+    .no-right-xs {
+        padding-right: 0 !important;
+    }
+}
+
 .grayscale {
     -webkit-filter: grayscale(0.6);
     -webkit-filter: grayscale(60%);

@@ -8,7 +8,7 @@
             </div>
             <div class="legend hidden-xs">
                 <div class="pull-left">Passer la souris pour zoomer</div>
-                <a class="pull-right text-bold text-underline text-black">Voir l'image taille réelle</a>
+                <a class="pull-right text-bold text-underline text-black" id="show-big">Voir l'image taille réelle</a>
             </div>
             <div class="legend hidden-sm hidden-lg hidden-md">
                 <div class="pull-left"><a href="img/tmp/product-large-385x505.jpg" target="_blank" class="text-black">Cliquez pour afficher l'image</a></div>
@@ -116,8 +116,8 @@
                         <div class="quantity">
                             <div class="quantity-wrapper">
                                 <span class="minus disabled">&lt;</span>
-                                <span id="qty-show" class="quantity-value">1</span>
-                                <input type="hidden" id="qty-value" value="1"/>
+                                <span data-qty-show class="quantity-value">1</span>
+                                <input type="hidden" data-qty-value value="1"/>
                                 <span class="plus">&gt;</span>
                                 <a class="hidden-xs" href="javascript:;">Guide des tailles</a>
                             </div>

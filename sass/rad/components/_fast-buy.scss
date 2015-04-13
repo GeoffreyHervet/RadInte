@@ -50,4 +50,23 @@
     .infos {
         padding: 30px;
     }
+
+    .close {
+        position: absolute;
+        z-index: 9999;
+        right: 0;
+        top: 0;
+        padding: 6px 10px;
+        background: white;
+        @media (max-width: 767px) {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            padding-right: 0;
+            margin-right: 0px;
+            background: none;
+        }
+    }
+    .row {
+        position: relative;
+    }
 }

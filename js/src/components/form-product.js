@@ -2,7 +2,7 @@
 (function() {
 
     Rad.prototype.formProduct = function(){
-        var $displayer = $('#qty-show');
+        var $displayer = $('[data-qty-show]');
         var $form = $('form.product-buy');
         var $zoomImg = $('[data-zoom-image]');
 
@@ -138,9 +138,19 @@
                 var ret = null;
                 $form.find('[data-empty]').each(function () {
                     var $this = $(this);
+                    var $errorEl = $this;
+                    if ($this.is('[data-select2-enabled]')) {
+                        $errorEl = $this.parent().find('.select2-container');
+                    }
 
                     if ($(this).val() == 0) {
-                        ret = $this.attr('data-empty');
+                        if (ret == null) {
+                            ret = $this.attr('data-empty');
+                        }
+                        $errorEl.addClass('form-error');
+                    }
+                    else {
+                        $errorEl.removeClass('form-error');
                     }
                 });
 
@@ -149,16 +159,17 @@
 
             var timer = null;
             var $btn = $form.find('[name="buy"]');
-            $form.submit(function (e) {
+            $form.on('submit', function (e) {
                 var error = getError();
                 if (timer !== null) {
                     clearTimeout(timer);
-                    $btn.tooltip('destory');
+                    timer = null;
                 }
                 if (error !== null) {
                     e.preventDefault();
                     timer = setTimeout(function () {
                         $btn.tooltip('destroy');
+                        timer = null;
                     }, 3000);
                     $btn.tooltip({title: error, trigger: 'manual'}).tooltip('show');
                 }
@@ -171,10 +182,10 @@
             if (!$displayer.length) {
                 return;
             }
-            var $container = $displayer.parent();
+            var $container = $displayer.closest('form');
             var $minus = $container.find('.minus');
             var $plus = $container.find('.plus');
-            var $value = $('#qty-value');
+            var $value = $('[data-qty-value]');
             var currentValue = parseInt($value.val());
 
             var setVal = function (add) {
@@ -216,6 +227,11 @@
             });
 
         })();
+
+        $('#show-big').click(function(e){
+            e.preventDefault();
+            $(this).closest('.img-big').find('img.img-responsive').click();
+        })
     };
 
     rad.formProduct();
