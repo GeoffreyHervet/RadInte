@@ -79,6 +79,21 @@
             });
         })();
 
+        // Infos details spec...
+        (function(){
+            $('.infos .menu li a').click(function(e){
+                e.preventDefault();
+                var $this       = $(this);
+                var $active     = $this.closest('ul').find('li.active');
+
+                $($active.removeClass('active').find('a').attr('href')).addClass('hide').hide();
+                var $target = $($this.attr('href'));
+                $target.removeClass('hide').show().closest('.scroll-container').scrollpanel('update');
+                $this.closest('li').addClass('active');
+
+            });
+        })();
+
         // Char left under textarea
         (function(){
             var $countLeft = $('#count-left[data-max]');
@@ -175,9 +190,15 @@
             };
 
             $minus.click(function () {
+                if ($(this).is('.disabled')) {
+                    return;
+                }
                 setVal(-1);
             });
             $plus.click(function () {
+                if ($(this).is('.disabled')) {
+                    return;
+                }
                 setVal(1);
             });
         })();

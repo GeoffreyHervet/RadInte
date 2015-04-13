@@ -16,6 +16,7 @@
         position: relative;
         form.search {
             display: none;
+            margin-left: 15px;
 
             &.in, &.collapsing {
                 display: block;

@@ -114,7 +114,7 @@
                     </ul>
                 </li>
                 <li style="color: #ffffff">
-                    <a href="#search" data-toggle="collapse" aria-expanded="false" id="search-header">
+                    <a href="#search" id="search-header">
                         <i class="glyphicon-search glyphicon"></i>
                         <span class="sm-only">&nbsp; Recherche</span>
                         <span class="sr-only">Recherche</span>
@@ -145,6 +145,7 @@
         </div>
     </div>
 </div>
+
 
 <footer class="fixed-footer">
     <div class="container">

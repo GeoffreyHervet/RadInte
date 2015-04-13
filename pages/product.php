@@ -16,13 +16,10 @@
         </div>
         <div class="img-big visible-xs">
             <div class="swiper-container">
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
                     <div class="swiper-slide"><img src="img/tmp/product-original-1376x2064.jpg" /></div>
                     <div class="swiper-slide"><img src="img/tmp/product2-original-1376x2064.jpg" /></div>
                 </div>
-                <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
             </div>
         </div>
