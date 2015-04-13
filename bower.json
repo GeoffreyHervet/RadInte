@@ -24,6 +24,7 @@
     "jcarousellite": "~1.9.3",
     "jquery-zoom": "~1.7.14",
     "fancybox": "~2.1.5",
-    "jquery.browser": "~0.0.7"
+    "jquery.browser": "~0.0.7",
+    "swiper": "~3.0.6"
   }
 }

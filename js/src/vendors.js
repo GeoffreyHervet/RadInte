@@ -7,3 +7,4 @@
 //= include ../../bower_components/jquery-zoom/jquery.zoom.js
 //= include ../../bower_components/fancybox/source/jquery.fancybox.js
 //= include ../../bower_components/jquery.browser/dist/jquery.browser.js
+//= include ../../bower_components/swiper/dist/js/swiper.jquery.js
