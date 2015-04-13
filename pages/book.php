@@ -1,8 +1,6 @@
 <?php require_once 'blocks/menu.php' ?>
-<div class="container category">
-    <h1 class="page-title text-underline text-center">Lookbook Madame</h1>
-</div>
 <div class="container book">
+    <h1 class="page-title text-underline-bottom text-center"><span>Lookbook Madame</span></h1>
     <div class="large first clearfix">
         <div class="text">
             <h2>Collection Madame / SS15</h2>
@@ -11,7 +9,7 @@
                 Chic, jalouse, chiante, cool, grognon, quel genre de Madame serez-vous ?
                 Une collection pétillante et décomplexée.
             </p>
-            <a href="javascript:;">SHOP NOW →</a>
+            <a href="javascript:;" class="text-underline-hover"><span>SHOP NOW →</span></a>
         </div>
         <div class="img">
             <img class="hidden-xs" data-original="img/tmp/book-original-1.jpg" src="img/tmp/book-madame-jalouse-502x592.jpg" alt="Madame jalouse" />
@@ -60,7 +58,7 @@
                 Chic, jalouse, chiante, cool, grognon, quel genre de Madame serez-vous ?
                 Une collection pétillante et décomplexée.
             </p>
-            <a href="javascript:;">SHOP NOW →</a>
+            <a href="javascript:;" class="text-underline-hover"><span>SHOP NOW →</span></a>
         </div>
         <div class="img">
             <img src="img/tmp/test-useless.jpg" alt="Madame jalouse" height="10" />

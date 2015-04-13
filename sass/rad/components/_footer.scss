@@ -29,6 +29,9 @@
                 &:hover {
                     color: $black;
                 }
+                &.text-underline-hover:hover span:first-of-type:before {
+                    bottom: -2px;
+                }
             }
             .fb-like {
                 top: -6px;

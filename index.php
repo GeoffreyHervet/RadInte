@@ -106,7 +106,7 @@
                                     continue;
                                 }
                                 $name = explode('.', $file);
-                                echo '<li><a href="?p='. $name[0] .'">'. ucfirst($name[0]) .'</a></li>';
+                                echo '<li><a class="text-underline-hover" href="?p='. $name[0] .'"><span>'. ucfirst($name[0]) .'</span></a></li>';
                             }
                         ?>
                     </ul>
@@ -148,11 +148,11 @@
 <footer class="fixed-footer">
     <div class="container">
         <ul>
-            <li><a class="text-black" data-toggle="modal" href="modals/service-client.html" data-target="#default-modal">Service client</a></li>
-            <li><a class="text-gray" href="#">Presse</a></li>
-            <li><a class="text-gray" href="#">Newsletter</a></li>
-            <li><a class="text-gray" href="#">Recrutement</a></li>
-            <li><a class="text-gray" href="#">Suivez-nous</a></li>
+            <li><a class="text-black text-underline-hover" data-toggle="modal" href="modals/service-client.html" data-target="#default-modal"><span>Service client</span></a></li>
+            <li><a class="text-gray text-underline-hover" href="#"><span>Presse</span></a></li>
+            <li><a class="text-gray text-underline-hover" href="#"><span>Newsletter</span></a></li>
+            <li><a class="text-gray text-underline-hover" href="#"><span>Recrutement</span></a></li>
+            <li><a class="text-gray text-underline-hover" href="#"><span>Suivez-nous</span></a></li>
             <li><div class="fb-like" data-href="https://www.facebook.com/rad" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div></li>
         </ul>
     </div>

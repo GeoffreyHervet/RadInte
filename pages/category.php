@@ -1,6 +1,6 @@
 <?php require_once 'blocks/menu.php' ?>
 <div class="container category">
-    <h1 class="page-title text-underline text-center">Robe femme</h1>
+    <h1 class="page-title text-underline-bottom text-center"><span>Robe femme</span></h1>
     <div class="row" itemtype="http://schema.org/ItemList">
         <meta itemprop="numberOfItems" content="315" />
         <?php for ($i = 0; $i < 11; $i++) { ?>

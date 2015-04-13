@@ -1,6 +1,6 @@
 <?php require_once 'blocks/menu.php' ?>
 <div class="container product-buy-container" itemscope itemtype="http://schema.org/Product">
-    <h1 class="page-title text-underline text-center">Vers l'infini et au delà</h1>
+    <h1 class="page-title text-underline-bottom text-center"><span>Vers l'infini et au delà</span></h1>
     <div class="content product">
         <div class="img-big hidden-xs">
             <div class="img-wrapper" data-zoom-image="img/tmp/product-original-1376x2064.jpg">

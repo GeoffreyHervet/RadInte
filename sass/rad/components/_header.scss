@@ -211,6 +211,9 @@ div.text-top {
         font-family: $helvetica-neue;
         &, a {
             color: $black;
+            &.text-underline-hover span:first-of-type:before {
+                bottom: -2px;
+            }
         }
         line-height: 27px;
         border-left: 1px solid $gray-lighter;
@@ -225,7 +228,9 @@ div.text-top {
         a {
             padding-top: 2px;
             color: $gray;
-            text-decoration: underline;
+            &.text-underline-bottom span:first-of-type:before {
+                bottom: -2px;
+            }
         }
     }
     @media (max-width: 1120px) {

@@ -6,7 +6,7 @@
     <div class="page-title text-center">
         <a href="./" class="back pull-left"><i class="glyphicon glyphicon-arrow-left"></i> retour</a>
         Connexion
-        <a href="?p=inscription" class="text-gray-disabled">Inscription</a>
+        <a href="?p=inscription" class="text-gray-disabled text-underline-hover"><span>Inscription</span></a>
     </div>
 
     <div class="row">

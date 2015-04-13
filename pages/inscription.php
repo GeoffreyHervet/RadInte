@@ -4,7 +4,7 @@
 <div class="container">
     <div class="page-title text-center">
         <a href="./" class="back pull-left"><i class="glyphicon glyphicon-arrow-left"></i> retour</a>
-        <a href="?p=connexion" class="text-gray-disabled">Connexion</a>
+        <a href="?p=connexion" class="text-gray-disabled text-underline-hover"><span>Connexion</span></a>
         Inscription
     </div>
     <div class="row">
