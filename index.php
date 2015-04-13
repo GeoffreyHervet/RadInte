@@ -41,9 +41,7 @@
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" id="right-menu-toggler">
                 <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <img src="img/collapse-cart.gif" />
             </button>
             <button type="button" class="navbar-toggle navbar-toggle-left collapsed" id="left-menu-toggler">
                 <span class="sr-only">Toggle navigation</span>
