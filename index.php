@@ -146,7 +146,6 @@
     </div>
 </div>
 
-
 <footer class="fixed-footer">
     <div class="container">
         <ul>

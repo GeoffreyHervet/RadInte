@@ -2,7 +2,7 @@
 <div class="container product-buy-container" itemscope itemtype="http://schema.org/Product">
     <h1 class="page-title text-underline text-center">Vers l'infini et au delà</h1>
     <div class="content product">
-        <div class="img-big">
+        <div class="img-big hidden-xs">
             <div class="img-wrapper" data-zoom-image="img/tmp/product-original-1376x2064.jpg">
                 <img src="img/tmp/product-large-385x505.jpg" class="img-responsive" alt="Image du produit" title="Vers l'infini et au dela (petit bateau)" />
             </div>
@@ -14,7 +14,19 @@
                 <div class="pull-left"><a href="img/tmp/product-large-385x505.jpg" target="_blank" class="text-black">Cliquez pour afficher l'image</a></div>
             </div>
         </div>
-        <div class="thumbnails">
+        <div class="img-big visible-xs">
+            <ul class="list-unstyled">
+                <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>
+                <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>
+                <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>
+                <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>
+                <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>
+                <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>
+                <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>
+                <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>
+            </ul>
+        </div>
+        <div class="thumbnails hidden-xs">
             <div class="prev"></div>
             <div class="carousel">
                 <ul class="list-unstyled">
@@ -78,8 +90,8 @@
                     <div class="form-group">
                         <label class="control-label" for="color-choice">Couleur</label>
                         <div class="colors">
-                            <select class="" name="color" id="color-choice">
-                                <option value="1" data-color="#000000"><span style="font-weight: bold;">OK </span>Noir</option>
+                            <select class="" name="color" id="color-choice" data-color-choice>
+                                <option value="1" data-color="#000000">Noir</option>
                                 <option value="2" data-color="#ffffff">Blanc</option>
                                 <option value="3" data-color="#1E90FF">Bleu marine</option>
                             </select>
@@ -103,7 +115,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label" for="quantity-choice">Taille</label>
+                        <label class="control-label" for="quantity-choice">Quantité</label>
                         <div class="quantity">
                             <span class="minus disabled">&lt;</span>
                             <span id="qty-show" class="quantity-value">1</span>

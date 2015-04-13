@@ -26,7 +26,7 @@
     </a>
     <?php if ($kind != 'gone') { ?>
         <div class="btn-actions text-uppercase">
-            <a class="fast-buy" href="./">Achat rapide</a>
+            <a class="fast-buy" data-toggle="modal" href="modals/fast-buy.html" data-target="#fast-buy">Achat rapide</a>
             <a class="save" href="./">Sauvegarder</a>
             <div class="clearfix"></div>
         </div>

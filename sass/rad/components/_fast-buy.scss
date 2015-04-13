@@ -1,0 +1,53 @@
+.modal.fast-buy {
+    .modal-dialog {
+        width: 900px;
+        @media (max-width: 992px) {
+            width: 90%;
+            .infos {
+                margin-top: 10px;
+            }
+        }
+
+        .modal-content {
+            background: none;
+            @include shadow(rgba(0,0,0,0));
+            border: none;
+        }
+    }
+
+    .img-slider {
+        position: relative;
+        .fast-buy-prev-img,
+        .fast-buy-next-img {
+            position: absolute;
+            top: 50%;
+            margin-top: -14px;
+            background: white;
+            cursor: pointer;
+            &:before {
+                content: '';
+                display: block;
+                background: white url(../../../img/arrows.png) no-repeat;
+                width: 7px;
+                height: 14px;
+                margin: 10px;
+            }
+        }
+        .fast-buy-prev-img {
+            left: 0;
+            &:before {
+                background-position: 0 0;
+            }
+        }
+        .fast-buy-next-img {
+            right: 0;
+            &:before {
+                background-position: -7px 0;
+            }
+        }
+    }
+
+    .infos {
+        padding: 30px;
+    }
+}

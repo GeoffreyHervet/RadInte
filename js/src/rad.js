@@ -1,4 +1,10 @@
 'use strict';
+
+var Rad = function(){
+
+};
+
 jQuery(function($){
-//= require_tree components
+    var rad = new Rad();
+    //= require_tree components
 });
