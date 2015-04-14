@@ -66,8 +66,8 @@
                         </div>
                     </div>
                     <div class="form-group form-submit-wrapper">
-                        <input type="submit" name="buy"  class="btn btn-black" value="+ Ajouter au panier" />
-                        <input type="submit" name="save" class="btn btn-white save" value="Sauvegarder" />
+                        <div><input type="submit" name="buy"  class="btn" value="+ Ajouter au panier" /></div>
+                        <div><a href="javascript:;" class="whish-it text-underline-hover"><span>Sauvegarder ce produit</span></a></div>
                     </div>
                 </form>
             </div>

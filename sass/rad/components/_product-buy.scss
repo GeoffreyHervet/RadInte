@@ -2,6 +2,9 @@ form.product-buy {
     @extend .clearfix;
     font-family: $helvetica-neue;
     border-bottom: 1px solid $black;
+    &.no-bottom {
+        border-bottom: none;
+    }
 //    label {
 //        text-transform: uppercase;
 //        width: 23%;
@@ -30,6 +33,7 @@ form.product-buy {
 
     .size-chooser {
         text-align: center;
+        margin-top: 5px;
         .size {
             border: 1px solid $gray-light;
             &.active {

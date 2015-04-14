@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label" for="size-choice">Taille <a class="size-help text-black" href="javascript:;">(Ma taille ?)</a></label>
+                        <label class="control-label">Taille <a class="size-help text-black" href="javascript:;">(Ma taille ?)</a></label>
                         <div class="size-chooser">
                             <a class="size" href="javascript:;">XS</a>
                             <a class="size" href="javascript:;">S</a>

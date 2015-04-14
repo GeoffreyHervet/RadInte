@@ -12,20 +12,15 @@
         </div>
     </div>
     <div class="col-md-6 col-xs-12 no-right-xs">
-        <div class="bg-white-dark">
+        <div class="bg-white-dark product-buy-container">
             <div class="infos">
-                <form action="" method="post" class="product-buy">
-                    <div class="form-group">
-                        <label class="control-label">Prix</label>
-                        <div class="price">
-                            <strong>29,99 €</strong>
-                            <span class="old-price">39,99 €</span>
-                        </div>
-                    </div>
+                <form action="" method="post" class="product-buy no-bottom">
+                    <h1 class="product-title text-underline-bottom"><span>Ma copine c'est la plus fraiche</span></h1>
+                    <h2 class="product-price">29,99 €<span class="old-price">39,99 €</span></h2>
                     <div class="form-group">
                         <label class="control-label" for="color-choice">Couleur</label>
-                        <div class="colors">
-                            <select class="" name="color" id="color-choice" data-color-choice>
+                        <div class="colors select2-big select2-centered">
+                            <select name="color" id="color-choice" data-color-choice data-dropdown-css-class="select2-big">
                                 <option value="1" data-color="#000000">Noir</option>
                                 <option value="2" data-color="#ffffff">Blanc</option>
                                 <option value="3" data-color="#1E90FF">Bleu marine</option>
@@ -33,34 +28,18 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label" for="size-choice">Taille</label>
-                        <div class="sizes">
-                            <select class="select2-item" name="color" id="size-choice" data-nosearch="1" data-select2-enabled data-empty="Merci de selectionner une taille">
-                                <option value="">Sélectionnez une taille</option>
-                                <option value="9">XXS</option>
-                                <option value="8">XS</option>
-                                <option value="1">S</option>
-                                <option value="2">M</option>
-                                <option value="3">L</option>
-                                <option value="4">XL</option>
-                                <option value="5">XXL</option>
-                                <option value="6">3XL</option>
-                                <option value="7">4XL</option>
-                            </select>
+                        <label class="control-label">Taille <a class="size-help text-black" href="javascript:;">(Ma taille ?)</a></label>
+                        <div class="size-chooser">
+                            <a class="size" href="javascript:;">XS</a>
+                            <a class="size" href="javascript:;">S</a>
+                            <a class="size" href="javascript:;">M</a>
+                            <a class="size active" href="javascript:;">L</a>
+                            <a class="size" href="javascript:;">XL</a>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="control-label">Quantité</label>
-                        <div class="quantity">
-                            <span class="minus disabled">&lt;</span>
-                            <span data-qty-show class="quantity-value">1</span>
-                            <input type="hidden" data-qty-value value="1"/>
-                            <span class="plus">&gt;</span>
-                        </div>
-                    </div>
-                    <div class="form-group form-submit-wrapper">
-                        <input type="submit" name="buy" class="btn btn-black" value="+ Ajouter au panier">
-                    </div>
+                    <!--<div class="form-group form-submit-wrapper">-->
+                        <!--<input type="submit" name="buy" class="btn btn-black" value="+ Ajouter au panier">-->
+                    <!--</div>-->
                 </form>
             </div>
         </div>
