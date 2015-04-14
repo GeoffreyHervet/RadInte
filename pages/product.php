@@ -23,20 +23,20 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-            <div class="thumbnails hidden-xs">
-                <div data-carrousel="thumbnails-vertical-prev" class="prev"></div>
-                <div class="carousel">
-                    <ul class="list-unstyled">
-                        <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>
-                        <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>
-    <!--                    <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>-->
-    <!--                    <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>-->
-    <!--                    <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>-->
-    <!--                    <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>-->
-                    </ul>
-                </div>
-                <div data-carrousel="thumbnails-vertical-next" class="next"></div>
+        </div>
+        <div class="thumbnails hidden-xs">
+            <div data-carrousel="thumbnails-vertical-prev" class="prev"></div>
+            <div class="carousel">
+                <ul class="list-unstyled">
+                    <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>
+                    <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>
+<!--                    <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>-->
+<!--                    <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>-->
+<!--                    <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>-->
+<!--                    <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>-->
+                </ul>
             </div>
+            <div data-carrousel="thumbnails-vertical-next" class="next"></div>
         </div>
         <div class="infos">
             <div class="bg-white">
@@ -52,7 +52,7 @@
                                 <option value="3" data-color="#1E90FF">Bleu marine</option>
                             </select>
                         </div>
-                        <div class="color-chooser select2-big">
+                        <div class="color-chooser select2-big visible-xs">
                             <a data-value="1" data-is-select data-target="#color-choice" class="color active" href="javascript:;"><span class="round-color" style="background-color:#000000;"></span></a>
                             <a data-value="2" data-is-select data-target="#color-choice" class="color" href="javascript:;"><span class="round-color" style="background-color:#ffffff;"></span></a>
                             <a data-value="3" data-is-select data-target="#color-choice" class="color" href="javascript:;"><span class="round-color" style="background-color:#1E90FF;"></span></a>

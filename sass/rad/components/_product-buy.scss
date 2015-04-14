@@ -63,6 +63,7 @@ form.product-buy {
         font-weight: bold;
         font-family: $helvetica-neue;
         font-size: 14px;
+        width: 200px;
     }
 
     .whish-it {
@@ -70,6 +71,7 @@ form.product-buy {
         display: block;
         text-align: center;
         color: $black;
+        font-size: 12px;
         &.text-underline-hover:hover span:first-of-type:before {
             bottom: -2px;
         }

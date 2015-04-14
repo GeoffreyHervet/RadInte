@@ -176,28 +176,18 @@
                     e.preventDefault();
                     var $bottom = $('.form-group.size-item');
                     $bottom.addClass('open');
-                    var listenClose = function() {
-                        setTimeout(function () {
-                            $('body').one('click', function (e) {
-                                console.log('ME');
-                                if (!$bottom.is('.open')) {
-                                    return;
-                                }
-                                if ($(window).height() - e.pageY > $bottom.height()) {
-                                    e.preventDefault();
-                                    e.stopPropagation();
-                                    $bottom.removeClass('open');
-                                }
-                                else {
-                                    listenClose();
-                                }
-                            });
-                        }, 0);
-                    };
-                    listenClose();
+                    setTimeout(function() {
+                        $('html').one('click', function (e) {
+                            if (!$bottom.is('.open')) {
+                                return;
+                            }
+                            $bottom.removeClass('open');
+                        });
+                    });
                 }
             });
             $('.size-chooser a[data-value][data-target]').click(function(e){
+                e.stopPropagation();
                 e.preventDefault();
                 var $this = $(this);
                 console.log('ICI');
@@ -207,6 +197,7 @@
             });
 
             $('.color-chooser a[data-value][data-target]').click(function(e){
+                e.stopPropagation();
                 e.preventDefault();
                 var $this = $(this);
                 $this.parent().find('.active').removeClass('active');
@@ -225,7 +216,6 @@
                 }
                 if (error !== null) {
                     e.preventDefault();
-                    console.log('ICI, ERROR');
                     if ($(document).width() <= 767) {
                         alert(error);
                         return ;
