@@ -9,12 +9,15 @@
             clear: both;
         }
     }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         .col-xs-6:nth-child(2n+4) {
             clear: both;
         }
     }
     .item {
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+        }
         font-family: $helvetica-neue;
         font-size: 12px;
         text-align: center;
@@ -101,7 +104,7 @@
         .btn-actions {
             visibility: hidden;
             @media (max-width: 767px) {
-                visibility: visible;
+                display: none;
             }
             margin-top: 3px;
             margin-bottom: 20px;

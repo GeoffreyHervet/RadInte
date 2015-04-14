@@ -51,18 +51,23 @@
                             </select>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group size-item">
+                        <button type="button" class="close"><span>&times;</span></button>
                         <label class="control-label">Taille <a class="size-help text-black" href="javascript:;">(Ma taille ?)</a></label>
-                        <div class="size-chooser">
-                            <a class="size" href="javascript:;">XS</a>
-                            <a class="size" href="javascript:;">S</a>
-                            <a class="size" href="javascript:;">M</a>
-                            <a class="size active" href="javascript:;">L</a>
-                            <a class="size" href="javascript:;">XL</a>
+                        <div class="size-chooser" data-error-me>
+                            <a data-value="XXL" data-target="#size-val" class="size" href="javascript:;">XS</a>
+                            <a data-value="XXL" data-target="#size-val" class="size" href="javascript:;">S</a>
+                            <a data-value="XXL" data-target="#size-val" class="size" href="javascript:;">M</a>
+                            <a data-value="XXL" data-target="#size-val" class="size active" href="javascript:;">L</a>
+                            <a data-value="XXL" data-target="#size-val" class="size" href="javascript:;">XL</a>
+                            <input type="hidden" id="size-val" data-empty="Veuillez sélectionner une taille" value="">
+                            <div class="visible-xs">
+                                <div><input type="submit" name="buy-xs"  class="btn" value="Ajouter au panier" /></div>
+                            </div>
                         </div>
                     </div>
                     <div class="form-group form-submit-wrapper">
-                        <div><input type="submit" name="buy"  class="btn" value="+ Ajouter au panier" /></div>
+                        <div><input type="submit" name="buy" class="btn" value="Ajouter au panier" /></div>
                         <div><a href="javascript:;" class="whish-it text-underline-hover"><span>Sauvegarder ce produit</span></a></div>
                     </div>
                 </form>

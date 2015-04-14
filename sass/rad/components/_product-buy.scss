@@ -200,3 +200,94 @@ div.see-more {
         }
     }
 }
+
+@media (max-width: 767px) {
+    body {
+        padding-bottom: 70px;
+    }
+    .form-submit-wrapper {
+        background: yellow;
+        position: fixed;
+        z-index: $zindex-navbar-fixed + 1;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 0;
+        height: 64px;
+        div:first-child {
+            position: absolute;
+            width: 50%;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            input {
+                display: block;
+                position: absolte;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                padding: 0;
+                line-height: 64px;
+                width: 100%;
+            }
+            + div {
+                position: absolute;
+                width: 50%;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                background: white;
+                a {
+                    padding: 0;
+                    margin: 0;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    line-height: 64px;
+                }
+            }
+        }
+    }
+    .form-group.size-item {
+        display: block;
+        position: fixed;
+        z-index: $zindex-navbar-fixed + 2;
+        background: white;
+        left: 0;
+        right: 0;
+        bottom: -200px;
+        margin: 0;
+        $animation-duration: 0.4s;
+        -webkit-transition: right $animation-duration, left $animation-duration, bottom $animation-duration, top $animation-duration;
+        transition: right $animation-duration, left $animation-duration, bottom $animation-duration, top $animation-duration;
+
+        &.open {
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        button.close {
+            padding: 10px;
+            margin-top: 40px;
+        }
+        .control-label {
+            background: white;
+            padding: 12px 0 !important;
+            font-size: 15px;
+            a {
+                display: none;
+            }
+        }
+        .visible-xs {
+            margin-top: 10px;
+            input {
+                display: block;
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -22,7 +22,7 @@
 
     <title>Rad.co</title>
 
-    <link href="css/rad.css" rel="stylesheet">
+    <link href="css/rad.css?v=<?php echo time(); ?>" rel="stylesheet">
     <!--[if gte IE 9]>
     <style type="text/css">
         .gradient {
@@ -106,7 +106,7 @@
                                     continue;
                                 }
                                 $name = explode('.', $file);
-                                echo '<li><a class="text-underline-hover" href="?p='. $name[0] .'"><span>'. ucfirst($name[0]) .'</span></a></li>';
+                                echo '<li><a class="text-underline-hover" href="?p='. $name[0] .'&v='.time().'"><span>'. ucfirst($name[0]) .'</span></a></li>';
                             }
                         ?>
                     </ul>

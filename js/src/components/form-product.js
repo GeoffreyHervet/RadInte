@@ -151,6 +151,9 @@
                     if ($this.is('[data-select2-enabled]')) {
                         $errorEl = $this.parent().find('.select2-container');
                     }
+                    else if ($this.closest('[data-error-me]').length) {
+                        $errorEl = $this.closest('[data-tooltip-me]')
+                    }
 
                     if ($(this).val() == 0) {
                         if (ret == null) {
@@ -168,6 +171,25 @@
 
             var timer = null;
             var $btn = $form.find('[name="buy"]');
+            $btn.click(function(e){
+                if ($(document).width() <= 767) {
+                    e.preventDefault();
+                    $('.form-group.size-item').addClass('open');
+                }
+            });
+            $('.form-group.size-item .close').click(function(e){
+                e.preventDefault();
+                $(this).closest('.form-group.size-item').toggleClass('open');
+            });
+
+            $('.size-chooser a[data-value][data-target]').click(function(e){
+                e.preventDefault();
+                var $this = $(this);
+                $('.size-chooser a[data-value][data-target].active').removeClass('active');
+                $this.addClass('active');
+                $($this.attr('data-target')).val($this.attr('data-value'));
+            });
+
             $form.on('submit', function (e) {
                 var error = getError();
                 if (timer !== null) {
@@ -176,13 +198,20 @@
                 }
                 if (error !== null) {
                     e.preventDefault();
+                    console.log('ICI, ERROR');
+                    if ($(document).width() <= 767) {
+                        alert(error);
+                        return ;
+                    }
                     timer = setTimeout(function () {
                         $btn.tooltip('destroy');
                         timer = null;
                     }, 3000);
                     $btn.tooltip({title: error, trigger: 'manual'}).tooltip('show');
                 }
-
+                else if ($(document).width() <= 767) {
+                    $('.form-group.size-item.open').removeClass('open');
+                }
             });
         })();
 

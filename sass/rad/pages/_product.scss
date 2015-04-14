@@ -4,6 +4,9 @@
     color: $black;
     font-weight: normal;
     font-family: $helvetica-neue;
+    span:before {
+        display: none !important;
+    }
 }
 
 .modal .product-title {
