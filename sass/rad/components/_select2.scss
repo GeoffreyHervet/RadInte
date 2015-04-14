@@ -7,6 +7,7 @@
     .select2-choice {
         @include radius(0);
         background: white;
+        height: auto;
         border-color: $gray-light;
         > .select2-chosen {
             font-family: $helvetica-neue;
@@ -70,4 +71,34 @@
     float: left;
     -webkit-box-shadow: 0 0 1px 0 #878787;
     box-shadow: 0 0 1px 0 #878787;
+}
+
+.select2-big {
+    .round-color {
+        width: 19px;
+        height: 19px;
+        @include radius(10px);
+    }
+    .select2-container .select2-choice {
+        > .select2-chosen {
+            padding: 10px 0 10px 5px;
+        }
+        .select2-arrow {
+            margin-right: 10px;
+        }
+    }
+
+    .select2-result-label {
+        padding-top: 13px;
+        padding-bottom: 14px;
+    }
+}
+
+.select2-centered {
+    .select2-container {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 }

@@ -49,19 +49,25 @@
                 });
             });
 
-            $container.jCarouselLite({
-                btnNext: '.next',
-                btnPrev: '.prev',
-                vertical: true,
-                visible: 4,
-                afterEnd: function(){
-                    destroy_zoom();
-                    var cfg = $container.find('.active [data-img][data-big]');
-                    $zoomImg.attr('data-zoom-image', cfg.attr('data-big'));
-                    $zoomImg.find('img').attr('src', cfg.attr('data-img'));
-                    init_zoom();
-                }
-            });
+            if ($container.find('li').length > 4) {
+                $container.jCarouselLite({
+                    btnNext: '[data-carrousel="thumbnails-vertical-next"]',
+                    btnPrev: '[data-carrousel="thumbnails-vertical-prev"]',
+                    vertical: true,
+                    visible: 4,
+                    afterEnd: function () {
+                        destroy_zoom();
+                        var cfg = $container.find('.active [data-img][data-big]');
+                        $zoomImg.attr('data-zoom-image', cfg.attr('data-big'));
+                        $zoomImg.find('img').attr('src', cfg.attr('data-img'));
+                        init_zoom();
+                    }
+                });
+                $('[data-carrousel="thumbnails-vertical-next"],[data-carrousel="thumbnails-vertical-prev"]').show();
+            }
+            else {
+                $('[data-carrousel="thumbnails-vertical-next"],[data-carrousel="thumbnails-vertical-prev"]').hide();
+            }
 
             $container.find('li').each(function() {
                 var $this = $(this);
@@ -81,7 +87,7 @@
 
         // Infos details spec...
         (function(){
-            $('.infos .menu li a').click(function(e){
+            $('.infos .menu li[data-menu] a').click(function(e){
                 e.preventDefault();
                 var $this       = $(this);
                 var $active     = $this.closest('ul').find('li.active');
@@ -121,13 +127,16 @@
                 return '<span class="round-color" style="background-color:' + el.attr('data-color') + ';"></span>' + item.text;
             };
 
-            $('[data-color-choice]').select2({
+            var $el = $('[data-color-choice]');
+            var cls = $el.attr('data-dropdown-css-class') || null;
+            $el.select2({
                 formatSelection: formatResult,
                 formatResult: formatResult,
                 escapeMarkup: function (m) {
                     return m;
                 },
-                minimumResultsForSearch: Infinity
+                minimumResultsForSearch: Infinity,
+                dropdownCssClass: cls
             });
         })();
 
