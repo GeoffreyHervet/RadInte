@@ -260,7 +260,7 @@ div.see-more {
         right: 0;
         bottom: -160px;
         margin: 0;
-        $animation-duration: 0.4s;
+        $animation-duration: 0.6s;
         -webkit-transition: right $animation-duration, left $animation-duration, bottom $animation-duration, top $animation-duration;
         transition: right $animation-duration, left $animation-duration, bottom $animation-duration, top $animation-duration;
         background: $red-light;
@@ -269,6 +269,9 @@ div.see-more {
             left: 0;
             right: 0;
             bottom: 0;
+            $animation-duration: 0.4s;
+            -webkit-transition: right $animation-duration, left $animation-duration, bottom $animation-duration, top $animation-duration;
+            transition: right $animation-duration, left $animation-duration, bottom $animation-duration, top $animation-duration;
         }
         button.close {
             padding: 10px;
@@ -282,7 +285,7 @@ div.see-more {
             color: $white;
             font-weight: bold;
             border: 2px solid $white;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             &:hover, &:focus, &.active {
                 background-color: $white;
                 color: $red-light;
@@ -292,7 +295,6 @@ div.see-more {
         .control-label {
             color: $white !important;
             background-color: $red-light;
-            font-weight: bolder !important;
             padding: 12px 0 !important;
             font-size: 15px;
             a {

@@ -174,17 +174,33 @@
             $btn.click(function(e){
                 if ($(document).width() <= 767) {
                     e.preventDefault();
-                    $('.form-group.size-item').addClass('open');
+                    var $bottom = $('.form-group.size-item');
+                    $bottom.addClass('open');
+                    var listenClose = function() {
+                        setTimeout(function () {
+                            $('body').one('click', function (e) {
+                                console.log('ME');
+                                if (!$bottom.is('.open')) {
+                                    return;
+                                }
+                                if ($(window).height() - e.pageY > $bottom.height()) {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    $bottom.removeClass('open');
+                                }
+                                else {
+                                    listenClose();
+                                }
+                            });
+                        }, 0);
+                    };
+                    listenClose();
                 }
             });
-            $('.form-group.size-item .close').click(function(e){
-                e.preventDefault();
-                $(this).closest('.form-group.size-item').toggleClass('open');
-            });
-
             $('.size-chooser a[data-value][data-target]').click(function(e){
                 e.preventDefault();
                 var $this = $(this);
+                console.log('ICI');
                 $this.parent().find('.active').removeClass('active');
                 $this.addClass('active');
                 $($this.attr('data-target')).val($this.attr('data-value'));
@@ -194,7 +210,7 @@
                 e.preventDefault();
                 var $this = $(this);
                 $this.parent().find('.active').removeClass('active');
-                $this.addClass('active')
+                $this.addClass('active');
                 var $sel = $($this.attr('data-target'));
                 $sel.find('option:selected').prop('selected', false);
                 $sel.find('option[value="' + $this.attr('data-value') + '"]').prop('selected', true).closest('select').trigger('change');

@@ -59,8 +59,8 @@
                         </div>
                     </div>
                     <div class="form-group size-item">
-                        <button type="button" class="close"><span>&times;</span></button>
-                        <label class="control-label">Taille <a class="size-help text-black" href="javascript:;">(Ma taille ?)</a></label>
+<!--                        <button type="button" class="close"><span>&times;</span></button>-->
+                        <label class="control-label"><span class="visible-xs-inline">Choisissez votre taille</span><span class="hidden-xs">Taille</span> <a class="size-help text-black" href="javascript:;">(Ma taille ?)</a></label>
                         <div class="size-chooser" data-error-me>
                             <a data-value="XXL" data-target="#size-val" class="size" href="javascript:;">XS</a>
                             <a data-value="XXL" data-target="#size-val" class="size" href="javascript:;">S</a>
