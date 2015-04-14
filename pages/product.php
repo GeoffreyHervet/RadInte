@@ -1,40 +1,42 @@
 <?php require_once 'blocks/menu.php' ?>
 <div class="container product-buy-container" itemscope itemtype="http://schema.org/Product">
     <div class="content product">
-        <div class="img-big hidden-xs">
-            <div class="img-wrapper" data-zoom-image="img/tmp/product-original-1376x2064.jpg">
-                <img src="img/tmp/product-large-385x505.jpg" class="img-responsive" alt="Image du produit" title="Vers l'infini et au dela (petit bateau)" />
-            </div>
-            <div class="legend hidden-xs">
-                <div class="pull-left">Passer la souris pour zoomer</div>
-                <a class="pull-right text-bold text-underline text-black" id="show-big">Voir l'image taille réelle</a>
-            </div>
-            <div class="legend hidden-sm hidden-lg hidden-md">
-                <div class="pull-left"><a href="img/tmp/product-large-385x505.jpg" target="_blank" class="text-black">Cliquez pour afficher l'image</a></div>
-            </div>
-        </div>
-        <div class="img-big visible-xs">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/tmp/product-original-1376x2064.jpg" /></div>
-                    <div class="swiper-slide"><img src="img/tmp/product2-original-1376x2064.jpg" /></div>
+        <div class="img-big-container">
+            <div class="img-big hidden-xs">
+                <div class="img-wrapper" data-zoom-image="img/tmp/product-original-1376x2064.jpg">
+                    <img src="img/tmp/product-large-385x505.jpg" class="img-responsive" alt="Image du produit" title="Vers l'infini et au dela (petit bateau)" />
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="legend hidden-xs">
+                    <div class="pull-left">Passer la souris pour zoomer</div>
+                    <a class="pull-right text-bold text-underline text-black" id="show-big">Voir l'image taille réelle</a>
+                </div>
+                <div class="legend hidden-sm hidden-lg hidden-md">
+                    <div class="pull-left"><a href="img/tmp/product-large-385x505.jpg" target="_blank" class="text-black">Cliquez pour afficher l'image</a></div>
+                </div>
             </div>
-        </div>
-        <div class="thumbnails hidden-xs">
-            <div data-carrousel="thumbnails-vertical-prev" class="prev"></div>
-            <div class="carousel">
-                <ul class="list-unstyled">
-                    <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>
-                    <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>
-<!--                    <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>-->
-<!--                    <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>-->
-<!--                    <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>-->
-<!--                    <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>-->
-                </ul>
+            <div class="img-big visible-xs">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/tmp/product-original-1376x2064.jpg" /></div>
+                        <div class="swiper-slide"><img src="img/tmp/product2-original-1376x2064.jpg" /></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
-            <div data-carrousel="thumbnails-vertical-next" class="next"></div>
+            <div class="thumbnails hidden-xs">
+                <div data-carrousel="thumbnails-vertical-prev" class="prev"></div>
+                <div class="carousel">
+                    <ul class="list-unstyled">
+                        <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>
+                        <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>
+    <!--                    <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>-->
+    <!--                    <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>-->
+    <!--                    <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>-->
+    <!--                    <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>-->
+                    </ul>
+                </div>
+                <div data-carrousel="thumbnails-vertical-next" class="next"></div>
+            </div>
         </div>
         <div class="infos">
             <div class="bg-white">
@@ -66,9 +68,9 @@
                             <a data-value="XXL" data-target="#size-val" class="size" href="javascript:;">L</a>
                             <a data-value="XXL" data-target="#size-val" class="size" href="javascript:;">XL</a>
                             <input type="hidden" id="size-val" data-empty="Veuillez sélectionner une taille" value="">
-                            <div class="visible-xs">
-                                <div><input type="submit" name="buy-xs"  class="btn" value="Ajouter au panier" /></div>
-                            </div>
+<!--                            <div class="visible-xs">-->
+<!--                                <div><input type="submit" name="buy-xs"  class="btn" value="Ajouter au panier" /></div>-->
+<!--                            </div>-->
                         </div>
                     </div>
                     <div class="form-group form-submit-wrapper">

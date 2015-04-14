@@ -258,11 +258,12 @@ div.see-more {
         background: white;
         left: 0;
         right: 0;
-        bottom: -200px;
+        bottom: -160px;
         margin: 0;
         $animation-duration: 0.4s;
         -webkit-transition: right $animation-duration, left $animation-duration, bottom $animation-duration, top $animation-duration;
         transition: right $animation-duration, left $animation-duration, bottom $animation-duration, top $animation-duration;
+        background: $red-light;
 
         &.open {
             left: 0;
@@ -271,10 +272,27 @@ div.see-more {
         }
         button.close {
             padding: 10px;
-            margin-top: 40px;
+            margin-top: 50px;
+        }
+        .size-chooser .size {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            background: $red-light;
+            color: $white;
+            font-weight: bold;
+            border: 2px solid $white;
+            margin-bottom: 10px;
+            &:hover, &:focus, &.active {
+                background-color: $white;
+                color: $red-light;
+                text-decoration: none;
+            }
         }
         .control-label {
-            background: white;
+            color: $white !important;
+            background-color: $red-light;
+            font-weight: bolder !important;
             padding: 12px 0 !important;
             font-size: 15px;
             a {

@@ -45,7 +45,7 @@
         width: 80%; // ~910
         margin: 20px auto 0;
 
-        > .img-big {
+        .img-big {
             float: left;
             width: 42.2%;
             margin-right: 1.5%;
@@ -154,7 +154,10 @@
 
         @media (max-width: 767px) {
             width: 100%;
-            > .img-big {
+            .img-big-container {
+                margin: -18px -15px 0;
+            }
+            .img-big {
                 width: 100%;
                 float: none;
                 margin-bottom: 20px;

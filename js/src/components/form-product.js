@@ -185,7 +185,7 @@
             $('.size-chooser a[data-value][data-target]').click(function(e){
                 e.preventDefault();
                 var $this = $(this);
-                $('.size-chooser a[data-value][data-target].active').removeClass('active');
+                $this.parent().find('.active').removeClass('active');
                 $this.addClass('active');
                 $($this.attr('data-target')).val($this.attr('data-value'));
             });
@@ -193,11 +193,12 @@
             $('.color-chooser a[data-value][data-target]').click(function(e){
                 e.preventDefault();
                 var $this = $(this);
-                $('.color-chooser a[data-value][data-target].active').removeClass('active');
-                $this.addClass('active');
+                $this.parent().find('.active').removeClass('active');
+                $this.addClass('active')
                 var $sel = $($this.attr('data-target'));
                 $sel.find('option:selected').prop('selected', false);
                 $sel.find('option[value="' + $this.attr('data-value') + '"]').prop('selected', true).closest('select').trigger('change');
+                $form.submit();
             });
 
             $form.on('submit', function (e) {
