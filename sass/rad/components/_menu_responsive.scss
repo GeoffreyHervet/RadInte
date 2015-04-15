@@ -60,7 +60,7 @@ $shadow: rgba(0,0,0,0.4);
 
     html.nav-left {
         nav.categories {
-            overflow: scroll-y;
+            overflow-y: scroll;
             -webkit-box-shadow: inset -7px 0 9px -7px $shadow;
             box-shadow: inset -7px 0 9px -7px $shadow;
             left: 0;
@@ -83,7 +83,8 @@ $shadow: rgba(0,0,0,0.4);
         .navbar .navbar-right {
             right: 0;
             width: $medium-width;
-            overflow: scroll-y;
+            overflow-y: scroll;
+            padding-bottom: 80px;
             @media (max-width: 500px) {
                 width: $small-width;
             }

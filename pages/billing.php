@@ -6,10 +6,10 @@
                 Connexion
             </div>
             <div class="active">
-                <span class="step">2</span>
+                <span class="step"><i class="glyphicon glyphicon-ok"></i></span>
                 Livraison
             </div>
-            <div>
+            <div class="active">
                 <span class="step">3</span>
                 Paiement
             </div>
@@ -21,18 +21,18 @@
     </div>
 
     <div class="container big-title">
-        Votre adresse de livraison
+        Votre mode de paiement
     </div>
 
     <div class="container containter-rel">
         <div class="cart-address">
             <div class="address-book">
-                <h3 class="small-title">Carnet d'addresse</h3>
+                <h3 class="small-title">Cartes enregistrées</h3>
                 <div class="item">
                     <div class="description">
                         <a href="javascript:;" class="hidden-md hidden-lg edit">Modifier</a>
                         <a href="javascript:;" class="hidden-md hidden-lg use">Livrer-ici</a>
-                        35 rue des Jeuneurs, 75002, PARIS
+                        (**** 1234)
                     </div>
                     <a href="javascript:;" class="visible-md-inline-block visible-lg-inline-block edit">Modifier</a>
                     <a href="javascript:;" class="visible-md-inline-block visible-lg-inline-block use">Livrer-ici</a>
@@ -41,7 +41,7 @@
                     <div class="description">
                         <a href="javascript:;" class="hidden-md hidden-lg edit">Modifier</a>
                         <a href="javascript:;" class="hidden-md hidden-lg use">Livrer-ici</a>
-                        35 rue des Jeuneurs, 75002, PARIS
+                        (**** 1234)
                     </div>
                     <a href="javascript:;" class="visible-md-inline-block visible-lg-inline-block edit">Modifier</a>
                     <a href="javascript:;" class="visible-md-inline-block visible-lg-inline-block use">Livrer-ici</a>
@@ -50,70 +50,75 @@
                     <div class="description">
                         <a href="javascript:;" class="hidden-md hidden-lg edit">Modifier</a>
                         <a href="javascript:;" class="hidden-md hidden-lg use">Livrer-ici</a>
-                        35 rue des Jeuneurs, 75002, PARIS
+                        (**** 1234)
                     </div>
                     <a href="javascript:;" class="visible-md-inline-block visible-lg-inline-block edit">Modifier</a>
                     <a href="javascript:;" class="visible-md-inline-block visible-lg-inline-block use">Livrer-ici</a>
                 </div>
             </div>
             <form class="address form-vertical">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="firstname">Prénom</label>
-                            <input type="text" class="form-control" id="firstname" placeholder="Prénom">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="lastname">Nom</label>
-                            <input type="text" class="form-control" id="lastname" placeholder="Nom">
-                        </div>
-                    </div>
-                </div>
                 <div class="form-group">
-                    <label for="address">Adresse de livraison</label>
-                    <input type="text" class="form-control" id="address" placeholder="Adresse de livraison">
-                    <input type="text" class="form-control" placeholder="Complément d'adresse">
+                    <label for="nom-carte">Nom</label>
+                    <input type="text" class="form-control" id="nom-carte" placeholder="Nom sur la carte">
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="ccnumber">Numéro de carte</label>
+                                <input type="text" class="form-control" id="ccnumber" placeholder="ex: 6037 2341 9432 6749">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="verification">Cryptogramme</label>
+                            <input type="text" class="form-control" id="verification" placeholder="ex: 123">
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="city">Ville</label>
-                            <input type="text" class="form-control form-error" id="city" placeholder="Ville">
-                            <div class="error">Ce champ est obligatoire</div>
+                            <div class="form-group">
+                                <label for="ccmonth">Expiration (mois)</label>
+                                <select id="ccmonth" class="form-control">
+                                    <?php for ($i = 1; $i <= 12; $i++) {
+                                        echo '<option value="' . $i .'">'. $i . '</option>';
+                                    } ?>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="country">Pays</label>
-                            <input type="text" class="form-control" id="country" placeholder="Pays">
+                            <div class="form-group">
+                                <label for="ccmonth">Expiration (mois)</label>
+                                <select id="ccmonth" class="form-control">
+                                    <?php
+                                        $currentYear = intval(date('Y'));
+                                        for ($i = -1; $i <= 12; $i++) {
+                                            echo '<option value="' . (($currentYear + $i)) .'">'. ($currentYear + $i) . '</option>';
+                                        }
+                                    ?>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="state">Département</label>
-                            <input type="text" class="form-control" id="state" placeholder="Département">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="zip">Code postal</label>
-                            <input type="number" class="form-control" id="zip" placeholder="Code postal">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="cell">Numéro de téléphone</label>
-                    <input type="tel" class="form-control" id="cell" placeholder="Numéro de téléphone">
-                    <div class="help">Indispensable pour la livraison et le suivi de votre colis.</div>
                 </div>
                 <div class="form-group">
                     <input type="submit" class="btn-full-width btn btn-danger" value="Valider →" />
                 </div>
             </form>
+            <div class="address-book address-book-right">
+                <h3 class="small-title">Autres modes de paiement</h3>
+                <div class="item">
+                    <a href="javascript:;"><img src="img/paypal-fr.png" alt="Payer avec paypal" /></a>
+                </div>
+                <div class="item">
+                    <a href="javascript:;"><img src="img/apple-pay-fr.png" alt="Payer avec  pay" /></a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container">

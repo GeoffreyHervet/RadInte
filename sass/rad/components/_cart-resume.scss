@@ -157,3 +157,34 @@
         }
     }
 }
+
+.navbar {
+    .cart-resume .cart-item {
+        display: table;
+        div.img {
+            float: none;
+            display: table-cell;
+            vertical-align: middle;
+            img {
+                height: auto;
+                width: 90%;
+            }
+        }
+        div.content {
+            float: none;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .close {
+            right: -10px;
+        }
+        &.deleted {
+            width: 100%;
+            .btn {
+                float: none;
+                clear: both;
+                margin-top: 5px;
+            }
+        }
+    }
+}

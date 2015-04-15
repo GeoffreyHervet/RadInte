@@ -11,7 +11,7 @@
     )) ? 'gray' : '';
 ?>
 <!DOCTYPE html>
-<html lang="fr"<?php if (isset($_GET['left'])) echo ' class="nav-left"';?>>
+<html lang="fr"<?php if (isset($_GET['left'])) echo ' class="nav-left"';?><?php if (isset($_GET['right'])) echo ' class="nav-right"';?>>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
