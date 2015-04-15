@@ -1,6 +1,4 @@
 .btn {
-    border: 1px solid $gray-dark;
-    color: $gray-dark;
     &.btn-white {
         border: 1px solid $gray-light;
         color: $gray-light;
@@ -11,9 +9,5 @@
     &.btn-black {
         color: $white;
         background-color: $black;
-    }
-    &.btn-primary {
-        background: $blue;
-        color: $white;
     }
 }

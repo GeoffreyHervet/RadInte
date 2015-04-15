@@ -94,6 +94,13 @@
     }
 }
 
+.select2-drop-active.black {
+    border-color: $black;
+}
+.select2-drop-active.cart-resume.color .select2-result-label {
+    @extend .clearfix;
+}
+
 .select2-centered {
     .select2-container {
         width: 200px;

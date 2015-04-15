@@ -15,6 +15,10 @@
             if ($this.attr('data-nosearch')) {
                 opts.minimumResultsForSearch = Infinity;
             }
+            var cls = $this.attr('data-dropdown-css-class');
+            if (cls) {
+                opts.dropdownCssClass = cls;
+            }
 
             $(this).select2(opts);
         });

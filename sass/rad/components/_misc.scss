@@ -132,3 +132,14 @@
 ::-moz-selection {
     background: $pink;
 }
+
+
+h4.small-title {
+    color: $black;
+    font-family: $helvetica-neue;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+    text-indent: 1px;
+}

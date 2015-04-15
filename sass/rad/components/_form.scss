@@ -28,8 +28,9 @@
                 color: $gray-light;
             }
             &:focus {
-                @include shadow($gray-light);
+                @include shadow(rgba(0,0,0,0));
                 outline: none;
+                border-color: $black-lighter;
             }
         }
     }
