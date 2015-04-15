@@ -31,29 +31,29 @@
                 <div class="item">
                     <div class="description">
                         <a href="javascript:;" class="hidden-md hidden-lg edit">Modifier</a>
-                        <a href="javascript:;" class="hidden-md hidden-lg use">Livrer-ici</a>
+                        <a href="javascript:;" class="hidden-md hidden-lg use">Utiliser</a>
                         (**** 1234)
                     </div>
                     <a href="javascript:;" class="visible-md-inline-block visible-lg-inline-block edit">Modifier</a>
-                    <a href="javascript:;" class="visible-md-inline-block visible-lg-inline-block use">Livrer-ici</a>
+                    <a href="javascript:;" class="visible-md-inline-block visible-lg-inline-block use">Utiliser</a>
                 </div>
                 <div class="item">
                     <div class="description">
                         <a href="javascript:;" class="hidden-md hidden-lg edit">Modifier</a>
-                        <a href="javascript:;" class="hidden-md hidden-lg use">Livrer-ici</a>
+                        <a href="javascript:;" class="hidden-md hidden-lg use">Utiliser</a>
                         (**** 1234)
                     </div>
                     <a href="javascript:;" class="visible-md-inline-block visible-lg-inline-block edit">Modifier</a>
-                    <a href="javascript:;" class="visible-md-inline-block visible-lg-inline-block use">Livrer-ici</a>
+                    <a href="javascript:;" class="visible-md-inline-block visible-lg-inline-block use">Utiliser</a>
                 </div>
                 <div class="item">
                     <div class="description">
                         <a href="javascript:;" class="hidden-md hidden-lg edit">Modifier</a>
-                        <a href="javascript:;" class="hidden-md hidden-lg use">Livrer-ici</a>
+                        <a href="javascript:;" class="hidden-md hidden-lg use">Utiliser</a>
                         (**** 1234)
                     </div>
                     <a href="javascript:;" class="visible-md-inline-block visible-lg-inline-block edit">Modifier</a>
-                    <a href="javascript:;" class="visible-md-inline-block visible-lg-inline-block use">Livrer-ici</a>
+                    <a href="javascript:;" class="visible-md-inline-block visible-lg-inline-block use">Utiliser</a>
                 </div>
             </div>
             <form class="address form-vertical">
