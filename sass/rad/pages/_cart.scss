@@ -1,5 +1,6 @@
 .cart-container {
 
+    padding-bottom: 30px;
     .big-title {
         margin-bottom: 20px;
         margin-top: -20px;
@@ -31,7 +32,7 @@
                 text-align: center;
                 text-decoration: none;
                 position: absolute;
-                top: 11px;
+                top: 7px;
                 right: 7px;
             }
         }
@@ -151,6 +152,23 @@
                 font-weight: bold;
                 font-size: 14px;
             }
+            &.ask-same-billing {
+            }
+        }
+    }
+
+    .recap {
+        margin-top: 80px;
+        padding-top: 10px;
+        border-top: 1px solid $gray-light;
+
+        h4.small-title {
+            font-weight: bold;
+            font-size: 14px;
+            height: 33px;
+            line-height: 33px;
+            margin: 0;
+            padding: 0;
         }
     }
 }

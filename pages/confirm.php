@@ -6,61 +6,31 @@
                 Récapitulatif
             </div>
             <div class="active">
-                <span class="step">2</span>
+                <span class="step"><i class="glyphicon glyphicon-ok"></i></span>
                 Connexion
             </div>
-            <div class="disababled">
-                <span class="step">3</span>
+            <div class="active">
+                <span class="step"><i class="glyphicon glyphicon-ok"></i></span>
                 Livraison
             </div>
-            <div class="disababled">
-                <span class="step">4</span>
+            <div class="active">
+                <span class="step"><i class="glyphicon glyphicon-ok"></i></span>
                 Paiement
             </div>
-            <div class="disababled">
+            <div class="active">
                 <span class="step">5</span>
                 Confirmation
             </div>
         </div>
     </div>
 
-    <div class="cart-connexion container">
-        <div class="page-title text-center">
-            Connexion
-            <a href="?p=inscription" class="text-gray-disabled text-underline-hover"><span>Inscription</span></a>
-        </div>
-
-        <div class="row">
-            <form role="form" action="?p=shipping" method="POST" class="form-vertical">
-                <?php if (isset($_POST) && count($_POST)) { ?>
-                    <div class="alert alert-danger alert-dismissible" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <strong>Erreur !</strong> Mauvais identifiants
-                    </div>
-                <?php } ?>
-                <div class="form-group">
-                    <input type="email" name="email" required placeholder="Entrez votre e-mail" />
-                </div>
-                <div class="form-group">
-                    <input type="password" name="password" required placeholder="Entrez votre mot de passe" />
-                    <a href="javascript:;" title="Mot de passe oublié" class="forgot-pass">?</a>
-                </div>
-                <div class="form-group">
-                    <input type="submit" class="btn btn-danger text-uppercase text-bold" value="Valider" />
-                </div>
-                <div class="or-separator">
-                    <span>ou</span>
-                    <a href="./" class="btn btn-primary">Connexion avec <strong>Facebook</strong></a>
-                </div>
-            </form>
-        </div>
+    <div class="container big-title">
+        Récapitulatif de votre commande #123493
     </div>
-    <div class="container hide"> <!-- Remove me if I still have the .hide class -->
-        <hr class="main-sepa" />
-        <h4 class="small-title">Votre commande</h4>
-        <div class="cart-resume" data-remove-text="Vous avez bien <strong>supprimé le produit.</strong>" data-remove-btn="Annuler">
+
+    <div class="container">
+        <div class="cart-resume">
             <div class="cart-item">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <div class="img">
                     <img width="82" height="106" src="img/tmp/product-small-85x110.jpg" />
                 </div>
@@ -92,15 +62,14 @@
                                 <option value="5">5</option>
                             </select>
                         </div>
-                        <span class="product-price">
-                            17,95€
-                            <span class="old-price">29,90€</span>
-                        </span>
+                            <span class="product-price">
+                                17,95€
+                                <span class="old-price">29,90€</span>
+                            </span>
                     </div>
                 </div>
             </div>
             <div class="cart-item">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <div class="img">
                     <img width="82" height="106" src="img/tmp/product-small-85x110.jpg" />
                 </div>
@@ -132,15 +101,10 @@
                                 <option value="5">5</option>
                             </select>
                         </div>
-                        <span class="product-price">
-                            17,95€
-                            <span class="old-price">29,90€</span>
-                        </span>
                     </div>
                 </div>
             </div>
             <div class="cart-item">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <div class="img">
                     <img width="82" height="106" src="img/tmp/product-small-85x110.jpg" />
                 </div>
@@ -172,10 +136,10 @@
                                 <option value="5">5</option>
                             </select>
                         </div>
-                        <span class="product-price">
-                            17,95€
-                            <span class="old-price">29,90€</span>
-                        </span>
+                            <span class="product-price">
+                                17,95€
+                                <span class="old-price">29,90€</span>
+                            </span>
                     </div>
                 </div>
             </div>
@@ -197,6 +161,22 @@
             <div class="num total">
                 <span>Total</span>
                 46,85 €
+            </div>
+        </div>
+    </div>
+    <div class="container recap">
+        <div class="row">
+            <div class="col-md-3">
+                <h4 class="small-title">Adresse de livraison</h4>
+                <p>1 rue pergolèse, 94400 Vitry sur seine</p>
+            </div>
+            <div class="col-md-3">
+                <h4 class="small-title">Adresse de facturation</h4>
+                <p>1 rue pergolèse, 94400 Vitry sur seine</p>
+            </div>
+            <div class="col-md-3">
+                <h4 class="small-title">Mode de paiement</h4>
+                <p>Carte bleue *** 6737</p>
             </div>
         </div>
     </div>

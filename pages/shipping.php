@@ -56,7 +56,7 @@
                     <a href="javascript:;" class="visible-md-inline-block visible-lg-inline-block use">Livrer-ici</a>
                 </div>
             </div>
-            <form class="address form-vertical">
+            <form class="address form-vertical" method="POST" action="/?p=billing">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -110,13 +110,18 @@
                     <input type="tel" class="form-control" id="cell" placeholder="Numéro de téléphone">
                     <div class="help">Indispensable pour la livraison et le suivi de votre colis.</div>
                 </div>
+                <div class="form-group ask-same-billing">
+                    <label>
+                        <input type="checkbox" id="different-billing" checked /> Adresse de facturation identique
+                    </label>
+                </div>
                 <div class="form-group">
                     <input type="submit" class="btn-full-width btn btn-danger" value="Valider →" />
                 </div>
             </form>
         </div>
     </div>
-    <div class="container">
+    <div class="container hide"> <!-- Remove me if I still have the .hide class -->
         <hr class="main-sepa" />
         <h4 class="small-title">Votre commande</h4>
         <div class="cart-resume" data-remove-text="Vous avez bien <strong>supprimé le produit.</strong>" data-remove-btn="Annuler">

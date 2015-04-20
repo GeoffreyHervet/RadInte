@@ -2,10 +2,10 @@
     <div class="container">
         <div class="breadcrumb-cart">
             <div class="active">
-                <span class="step"><i class="glyphicon glyphicon-ok"></i></span>
+                <span class="step">1</span>
                 Récapitulatif
             </div>
-            <div class="active">
+            <div class="disabled">
                 <span class="step">2</span>
                 Connexion
             </div>
@@ -24,43 +24,13 @@
         </div>
     </div>
 
-    <div class="cart-connexion container">
-        <div class="page-title text-center">
-            Connexion
-            <a href="?p=inscription" class="text-gray-disabled text-underline-hover"><span>Inscription</span></a>
-        </div>
-
-        <div class="row">
-            <form role="form" action="?p=shipping" method="POST" class="form-vertical">
-                <?php if (isset($_POST) && count($_POST)) { ?>
-                    <div class="alert alert-danger alert-dismissible" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <strong>Erreur !</strong> Mauvais identifiants
-                    </div>
-                <?php } ?>
-                <div class="form-group">
-                    <input type="email" name="email" required placeholder="Entrez votre e-mail" />
-                </div>
-                <div class="form-group">
-                    <input type="password" name="password" required placeholder="Entrez votre mot de passe" />
-                    <a href="javascript:;" title="Mot de passe oublié" class="forgot-pass">?</a>
-                </div>
-                <div class="form-group">
-                    <input type="submit" class="btn btn-danger text-uppercase text-bold" value="Valider" />
-                </div>
-                <div class="or-separator">
-                    <span>ou</span>
-                    <a href="./" class="btn btn-primary">Connexion avec <strong>Facebook</strong></a>
-                </div>
-            </form>
-        </div>
+    <div class="container big-title">
+        Récapitulatif de votre commande
     </div>
-    <div class="container hide"> <!-- Remove me if I still have the .hide class -->
-        <hr class="main-sepa" />
-        <h4 class="small-title">Votre commande</h4>
-        <div class="cart-resume" data-remove-text="Vous avez bien <strong>supprimé le produit.</strong>" data-remove-btn="Annuler">
+
+    <div class="container">
+        <div class="cart-resume">
             <div class="cart-item">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <div class="img">
                     <img width="82" height="106" src="img/tmp/product-small-85x110.jpg" />
                 </div>
@@ -92,15 +62,14 @@
                                 <option value="5">5</option>
                             </select>
                         </div>
-                        <span class="product-price">
-                            17,95€
-                            <span class="old-price">29,90€</span>
-                        </span>
+                            <span class="product-price">
+                                17,95€
+                                <span class="old-price">29,90€</span>
+                            </span>
                     </div>
                 </div>
             </div>
             <div class="cart-item">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <div class="img">
                     <img width="82" height="106" src="img/tmp/product-small-85x110.jpg" />
                 </div>
@@ -132,15 +101,14 @@
                                 <option value="5">5</option>
                             </select>
                         </div>
-                        <span class="product-price">
-                            17,95€
-                            <span class="old-price">29,90€</span>
-                        </span>
+                            <span class="product-price">
+                                17,95€
+                                <span class="old-price">29,90€</span>
+                            </span>
                     </div>
                 </div>
             </div>
             <div class="cart-item">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <div class="img">
                     <img width="82" height="106" src="img/tmp/product-small-85x110.jpg" />
                 </div>
@@ -172,10 +140,10 @@
                                 <option value="5">5</option>
                             </select>
                         </div>
-                        <span class="product-price">
-                            17,95€
-                            <span class="old-price">29,90€</span>
-                        </span>
+                            <span class="product-price">
+                                17,95€
+                                <span class="old-price">29,90€</span>
+                            </span>
                     </div>
                 </div>
             </div>
@@ -194,9 +162,31 @@
                 <span>Crédits</span>
                 -20 €
             </div>
+            <?php if (isset($_POST, $_POST['code'])) { ?>
+                <div class="num">
+                    <span>Code Promo</span>
+                    -20 €
+                </div>
+            <?php
+            } else {
+            ?>
+            <div class="num code-promo">
+                <form action="" method="post">
+                    <input name="code" placeholder="Code Promo" type="text" />
+                    <button type="submit"><i class="glyphicon glyphicon-ok"></i></button>
+                </form>
+            </div>
+            <?php } ?>
             <div class="num total">
                 <span>Total</span>
                 46,85 €
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-4 col-md-4 col-xs-12">
+                <a href="?p=cart" class="btn btn-danger btn-lg col-xs-12">Continuer</a>
             </div>
         </div>
     </div>
