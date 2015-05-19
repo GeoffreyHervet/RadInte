@@ -52,7 +52,7 @@
                                 <option value="3" data-color="#1E90FF">Bleu marine</option>
                             </select>
                         </div>
-                        <div class="color-chooser select2-big">
+                        <div class="color-chooser visible-xs select2-big">
                             <a data-value="1" data-is-select data-target="#color-choice" class="color active" href="javascript:;"><span class="round-color" style="background-color:#000000;"></span></a>
                             <a data-value="2" data-is-select data-target="#color-choice" class="color" href="javascript:;"><span class="round-color" style="background-color:#ffffff;"></span></a>
                             <a data-value="3" data-is-select data-target="#color-choice" class="color" href="javascript:;"><span class="round-color" style="background-color:#1E90FF;"></span></a>

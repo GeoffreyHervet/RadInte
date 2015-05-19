@@ -194,6 +194,7 @@
                 $this.parent().find('.active').removeClass('active');
                 $this.addClass('active');
                 $($this.attr('data-target')).val($this.attr('data-value'));
+                $form.submit();
             });
 
             $('.color-chooser a[data-value][data-target]').click(function(e){
@@ -205,7 +206,6 @@
                 var $sel = $($this.attr('data-target'));
                 $sel.find('option:selected').prop('selected', false);
                 $sel.find('option[value="' + $this.attr('data-value') + '"]').prop('selected', true).closest('select').trigger('change');
-                $form.submit();
             });
 
             $form.on('submit', function (e) {
@@ -229,6 +229,8 @@
                 else if ($(document).width() <= 767) {
                     $('.form-group.size-item.open').removeClass('open');
                 }
+
+                alert('Form sumited');
             });
         })();
 
