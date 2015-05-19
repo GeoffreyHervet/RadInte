@@ -1,0 +1,44 @@
+@import "../../../bower_components/fancybox/source/jquery.fancybox.css";
+.fancy-product {
+    .fancybox-skin {
+        @include radius(0);
+    }
+    .fancybox-nav span {
+        display: block;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 23px;
+        height: 24px;
+        background: $white;
+        &:before {
+            content: '';
+            display: block;
+            margin-left: 7px;
+            margin-top: 5px;
+            background: white url(../../../img/arrows.png) no-repeat;
+            width: 7px;
+            height: 14px;
+        }
+    }
+    .fancybox-nav.fancybox-prev span {
+        left: -44px;
+        &:before {
+            background-position: 0 0;
+        }
+    }
+    .fancybox-nav.fancybox-next span {
+        right: -44px;
+        &:before {
+            margin-left: 9px;
+            background-position: -7px 0px;
+        }
+    }
+
+    .fancybox-close {
+        background: url(../../../img/arrows.png) no-repeat -27px 0;
+        width: 13px;
+        height: 14px;
+        right: 14px;
+        top: 14px;
+    }
+}

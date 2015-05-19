@@ -1,0 +1,20 @@
+//$icon-font-path: "../fonts/";
+
+@import "rad/index";
+
+
+
+body {
+    font-size: 14px;
+    font-family: $helvetica-neue;
+    padding-top: 51px;
+    padding-bottom: 31px;
+    &.gray {
+        background-color: $white-dark;
+    }
+
+    @media (max-width : 767px) {
+        padding-top: 55px;
+        padding-bottom: 0;
+    }
+}

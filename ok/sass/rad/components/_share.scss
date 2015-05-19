@@ -1,0 +1,26 @@
+li.share {
+    @extend .clearfix;
+    font-family: $helvetica;
+    font-size: 12px;
+    margin: 0px;
+    line-height: 22px;
+    padding: 0 0 10px;
+    .facebook, .twitter, .pinterest {
+        background: url(../../../img/social-shares.png) no-repeat;
+        height: 22px;
+        width: 22px;
+        display: inline-block;
+        text-indent: -9999px;
+        margin-top: 8px;
+    }
+    .facebook {
+        background-position: 0 0;
+        margin-left: 10px;
+    }
+    .twitter {
+        background-position: -22px 0;
+    }
+    .pinterest {
+        background-position: -44px 0;
+    }
+}

@@ -1,0 +1,18 @@
+.btn {
+    &.btn-white {
+        border: 1px solid $gray-light;
+        color: $gray-light;
+        background: $white;
+
+    }
+
+    &.btn-black {
+        color: $white;
+        background-color: $black;
+    }
+
+    .btn-full-width {
+        width: 100%;
+        text-align: center;
+    }
+}

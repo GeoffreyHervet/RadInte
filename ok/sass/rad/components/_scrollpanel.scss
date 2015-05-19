@@ -1,0 +1,13 @@
+.sp-scrollbar {
+    width: 10px;
+    margin: 4px;
+    background-color: $gray-light;
+    cursor: pointer;
+
+    .sp-thumb {
+        background-color: #aaa;
+    }
+}
+.sp-scrollbar .sp-thumb {
+    background-color: $black-light;
+}

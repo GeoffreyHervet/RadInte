@@ -1,0 +1,149 @@
+.text-underline {
+    text-decoration: underline;
+}
+.text-underline-bottom {
+    text-decoration: none !important;
+    span:first-of-type {
+        position: relative;
+        &:before {
+            position: absolute;
+            content: '';
+            display: block;
+            bottom: 0;
+            left: -1px;
+            right: -1px;
+            z-index: 500;
+            border-bottom: 1px solid currentColor;
+        }
+    }
+}
+.text-underline-hover:hover {
+    text-decoration: none !important;
+    span:first-of-type {
+        position: relative;
+        &:before {
+            position: absolute;
+            content: '';
+            display: block;
+            bottom: 0;
+            left: -1px;
+            right: -1px;
+            z-index: 500;
+            border-bottom: 1px solid currentColor;
+        }
+    }
+}
+.text-bold {
+    font-weight: bold;
+}
+
+.page-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: $black;
+    margin: 10px auto 30px;
+    position: relative;
+    &.text-underline-bottom span:first-of-type:before {
+        border-bottom: 2px solid currentColor;
+        bottom: -2px;
+    }
+    a.text-gray-disabled {
+        padding-right: 10px;
+        padding-left: 10px;
+        &:hover {
+            color: $gray-disabled;
+        }
+        &.text-underline-hover:hover span:first-of-type:before {
+            border-bottom: 2px solid currentColor;
+            bottom: -2px;
+        }
+        &.text-underline-hover.minus5:hover span:first-of-type:before {
+            bottom: -5px;
+        }
+    }
+    a.back {
+        &, &:hover {
+            color: $black;
+        }
+        font-size: 12px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -6px;
+        line-height: 12px;
+        @media (max-width: 767px) {
+            position: relative;
+            text-align: left;
+            display: block;
+            width: 100%;
+            left: auto;
+            top: auto;
+            padding: 10px 0;
+            margin: 0;
+        }
+    }
+}
+
+.sticky {
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC45Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.9)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) 100%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6ffffff',GradientType=0 );
+    z-index: 1000;
+}
+
+.sepa-bottom {
+    @extend .clearfix;
+    height: 40px;
+}
+
+@media (max-width: 767px) {
+    .no-right-xs {
+        padding-right: 0 !important;
+    }
+}
+
+.grayscale {
+    -webkit-filter: grayscale(0.6);
+    -webkit-filter: grayscale(60%);
+    filter: grayscale(60%);
+    filter: gray;
+}
+.grayscale-100 {
+    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+.no-grayscale-hover:hover{
+    -webkit-filter: grayscale(0) !important;
+    -webkit-filter: grayscale(0%) !important;;
+    filter: grayscale(00%) !important;;
+    filter: gray !important;;
+}
+
+::selection {
+    background: $pink;
+}
+::-moz-selection {
+    background: $pink;
+}
+
+
+h4.small-title {
+    color: $black;
+    font-family: $helvetica-neue;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+    text-indent: 1px;
+}
+
+.containter-rel {
+    position: relative;
+}

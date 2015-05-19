@@ -1,0 +1,41 @@
+// Import basics
+@import "basics/vars";
+@import "basics/functions";
+
+// Dependencies
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../bower_components/swiper/dist/css/swiper.css";
+
+// Import all reusable components
+@import "components/colors";
+@import "components/btn";
+@import "components/dropdown";
+@import "components/modal";
+@import "components/misc";
+@import "components/form";
+@import "components/pagination";
+@import "components/scrollpanel";
+@import "components/summary-scroll";
+@import "components/select2";
+@import "components/tooltip";
+@import "components/share";
+@import "components/jcarousel";
+@import "components/fancybox";
+@import "components/navbar";
+@import "components/menu_responsive";
+@import "components/fast-buy";
+@import "components/swiper";
+@import "components/breadcrumb-cart";
+@import "components/cart-resume";
+
+@import "components/header";
+@import "components/categories-nav";
+@import "components/product-buy";
+@import "components/footer";
+
+// Import pages
+@import "pages/home";
+@import "pages/category";
+@import "pages/product";
+@import "pages/book";
+@import "pages/cart";
