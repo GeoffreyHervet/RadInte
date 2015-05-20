@@ -37,7 +37,7 @@
 <!--<script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1448799852059806&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>-->
 <div id="site-wrapper">
 <nav class="navbar navbar-fixed-top">
-    <div class="container">
+    <div class="fake-container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" id="right-menu-toggler">
                 <span class="sr-only">Toggle navigation</span>
@@ -205,35 +205,35 @@
                         (<span id="cart-count">1</span><span class="hidden-md hidden-lg"> article </span>) Panier
                     </a>
                     <ul class="dropdown-menu dropdown-menu-right cart-products hidden-sm hidden-xs" role="menu" id="cart-header-container">
-                        <li class="border">
-                            <a href="#" class="cart-product clearfix">
-                                <img src="img/tmp/product-cart-54x54.jpg" alt="Mon produit de fou" />
-                                <strong class="price text-white">19,90 €</strong>
-                                <span class="price text-gray stroke-gray">29,90 €</span>
-                                <span class="title">
-                                    Happy christmas sweater
-                                    <span class="specs">Happy christmas sweater</span>
+                        <li class="product">
+                            <span class="cart-product clearfix">
+                                <img src="img/tmp/product-cart-68x104.jpg.png" alt="Mon produit de fou" />
+                                <a href="javascript:;" class="title">JUST DO NOTHING SWEATER</a>
+                                <strong class="price">19,90 €</strong>
+                                <span class="specs">
+                                    <strong>Couleur</strong> Navy<br />
+                                    <strong>Taille</strong> S<br />
+                                    <strong>Quantité</strong> 1
                                 </span>
-                            </a>
+                            </span>
                         </li>
-                        <li class="border">
-                            <a href="#" class="cart-product clearfix">
-                                <img src="img/tmp/product-cart-54x54.jpg" alt="Mon produit de fou" />
-                                <span class="price text-white">19,90 €</span>
-                                <span class="title">
-                                    Happy christmas sweater
-                                    <span class="specs">Happy christmas sweater</span>
+                        <li class="product">
+                            <span class="cart-product clearfix">
+                                <img src="img/tmp/product-cart-68x104.jpg.png" alt="Mon produit de fou" />
+                                <a href="javascript:;" class="title">JUST DO NOTHING SWEATER</a>
+                                <strong class="price">19,90 €</strong>
+                                <span class="specs">
+                                    <strong>Couleur</strong> Navy<br />
+                                    <strong>Taille</strong> S<br />
+                                    <strong>Quantité</strong> 1
                                 </span>
-                            </a>
+                            </span>
                         </li>
                         <li class="total clearfix">
-                            <strong class="text-white pull-left">Sous-total</strong>
-                            <strong class="text-gray stroke-gray pull-right">39,80 €</strong>
-                            <strong class="text-white pull-right">39,80 € &nbsp; </strong>
-                        </li>
-                        <li class="actions">
-                            <a href="#" class="btn btn-gray">Voir mon panier</a>
-                            <a href="#" class="btn btn-white">Commander</a>
+                            <span class="price">
+                                Sous total <strong>48,90€ EUR</strong>
+                            </span>
+                            <a href="?p=recap" class="btn btn-danger">Passer commande</a>
                         </li>
                     </ul>
                 </li>
@@ -241,14 +241,15 @@
                 <li><a href="?p=inscription">Inscription</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Mon compte</a>
-                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
+                    <ul class="dropdown-menu dropdown-menu-left links" role="menu">
                         <?php
                             foreach (scandir('pages') as $file) {
                                 if ($file[0] == '.') {
                                     continue;
                                 }
                                 $name = explode('.', $file);
-                                echo '<li><a class="text-underline-hover" href="?p='. $name[0] .'&v='.time().'"><span>'. ucfirst($name[0]) .'</span></a></li>';
+//                                echo '<li><a class="text-underline-hover" href="?p='. $name[0] .'&v='.time().'"><span>'. ucfirst($name[0]) .'</span></a></li>';
+                                echo '<li><a href="?p='. $name[0] .'&v='.time().'">'. ucfirst($name[0]) .'</a></li>';
                             }
                         ?>
                     </ul>

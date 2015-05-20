@@ -1,106 +1,79 @@
 <?php require_once 'blocks/menu.php' ?>
-<div class="container product-buy-container" itemscope itemtype="http://schema.org/Product">
-    <div class="content product">
-        <div class="img-big-container">
-            <div class="img-big hidden-xs">
-                <div class="img-wrapper" data-zoom-image="img/tmp/product-original-1376x2064.jpg">
-                    <img src="img/tmp/product-large-385x505.jpg" class="img-responsive" alt="Image du produit" title="Vers l'infini et au dela (petit bateau)" />
-                </div>
-                <div class="legend hidden-xs">
-                    <div class="pull-left">Passer la souris pour zoomer</div>
-                    <a class="pull-right text-bold text-underline text-black" id="show-big">Voir l'image taille réelle</a>
-                </div>
-                <div class="legend hidden-sm hidden-lg hidden-md">
-                    <div class="pull-left"><a href="img/tmp/product-large-385x505.jpg" target="_blank" class="text-black">Cliquez pour afficher l'image</a></div>
-                </div>
-            </div>
-            <div class="img-big visible-xs">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/tmp/product-original-1376x2064.jpg" /></div>
-                        <div class="swiper-slide"><img src="img/tmp/product2-original-1376x2064.jpg" /></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
+    <div class="container breadcrumb-container">
+        <ol class="breadcrumb">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Nouveautés homme</a></li>
+            <li class="active text-underline-bottom"><span>Just do nothing Sweater</span></li>
+        </ol>
+    </div>
+    <div class="container product-buy-container" itemscope itemtype="http://schema.org/Product">
+        <div class="product-images">
+            <div class="preview">
+                <div class="img-preview">
+                    <img src="img/tmp/just-do-nothing-1-517x674.jpg" />
                 </div>
             </div>
-        </div>
-        <div class="thumbnails hidden-xs">
-            <div data-carrousel="thumbnails-vertical-prev" class="prev"></div>
-            <div class="carousel">
-                <ul class="list-unstyled">
-                    <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>
-                    <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>
-<!--                    <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>-->
-<!--                    <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>-->
-<!--                    <li><span data-img="img/tmp/product-large-385x505.jpg"  data-big="img/tmp/product-original-1376x2064.jpg"><img src="img/tmp/product-small-85x110.jpg" class="img-responsive"/></span></li>-->
-<!--                    <li><span data-img="img/tmp/product2-large-385x505.jpg" data-big="img/tmp/product2-original-1376x2064.jpg"><img src="img/tmp/product2-small-85x110.jpg" class="img-responsive"/></span></li>-->
+            <div class="thumbs">
+                <ul data-thumbs class="list-unstyled">
+                    <li class="active"><a href="img/tmp/just-do-nothing-1-517x674.jpg"><img src="img/tmp/product-thumb-jdn-1-91x124.jpg" /></a></li>
+                    <li><a href="img/tmp/just-do-nothing-2-517x674.jpg"><img src="img/tmp/product-thumb-jdn-2-91x124.jpg" /></a></li>
+                    <li><a href="img/tmp/just-do-nothing-3-517x674.jpg"><img src="img/tmp/product-thumb-jdn-3-91x124.jpg" /></a></li>
                 </ul>
             </div>
-            <div data-carrousel="thumbnails-vertical-next" class="next"></div>
         </div>
-        <div class="infos">
-            <div class="bg-white">
-                <h1 class="product-title text-underline-bottom"><span>Ma copine c'est la plus fraiche</span></h1>
-                <h2 class="product-price">29,99 €<span class="old-price">39,99 €</span></h2>
-                <form action="" method="post" class="product-buy">
-                    <div class="form-group">
-                        <label class="control-label" for="color-choice">Couleur</label>
-                        <div class="colors select2-big select2-centered hidden-xs">
-                            <select name="color" id="color-choice" data-color-choice data-dropdown-css-class="select2-big">
-                                <option value="1" data-color="#000000" selected>Noir</option>
-                                <option value="2" data-color="#ffffff">Blanc</option>
-                                <option value="3" data-color="#1E90FF">Bleu marine</option>
-                            </select>
-                        </div>
-                        <div class="color-chooser visible-xs select2-big">
-                            <a data-value="1" data-is-select data-target="#color-choice" class="color active" href="javascript:;"><span class="round-color" style="background-color:#000000;"></span></a>
-                            <a data-value="2" data-is-select data-target="#color-choice" class="color" href="javascript:;"><span class="round-color" style="background-color:#ffffff;"></span></a>
-                            <a data-value="3" data-is-select data-target="#color-choice" class="color" href="javascript:;"><span class="round-color" style="background-color:#1E90FF;"></span></a>
-                        </div>
-                    </div>
-                    <div class="form-group size-item">
-<!--                        <button type="button" class="close"><span>&times;</span></button>-->
-                        <label class="control-label"><span class="visible-xs-inline">Choisissez votre taille</span><span class="hidden-xs">Taille</span> <a class="size-help text-black" href="javascript:;">(Ma taille ?)</a></label>
-                        <div class="size-chooser" data-error-me>
-                            <a data-value="XXL" data-target="#size-val" class="size" href="javascript:;">XS</a>
-                            <a data-value="XXL" data-target="#size-val" class="size" href="javascript:;">S</a>
-                            <a data-value="XXL" data-target="#size-val" class="size" href="javascript:;">M</a>
-                            <a data-value="XXL" data-target="#size-val" class="size" href="javascript:;">L</a>
-                            <a data-value="XXL" data-target="#size-val" class="size" href="javascript:;">XL</a>
-                            <input type="hidden" id="size-val" data-empty="Veuillez sélectionner une taille" value="">
-<!--                            <div class="visible-xs">-->
-<!--                                <div><input type="submit" name="buy-xs"  class="btn" value="Ajouter au panier" /></div>-->
-<!--                            </div>-->
-                        </div>
-                    </div>
-                    <div class="form-group form-submit-wrapper">
-                        <div><input type="submit" name="buy" class="btn" value="Ajouter au panier" /></div>
-                        <div><a href="javascript:;" class="whish-it text-underline-hover"><span>Sauvegarder ce produit</span></a></div>
-                    </div>
-                </form>
-                <ul class="menu list-unstyled">
-                    <li data-menu class="active"><a href="#infos">Infos</a></li>
-                    <li data-menu><a href="#details">Détails</a></li>
-                    <li data-menu><a href="#shipping-and-payment">Livraison et paiement</a></li>
-                    <li class="share">
-                        <a href="javascript:;" class="facebook">Partager sur facebook</a>
-                        <a href="javascript:;" class="twitter">Partager sur twitter</a>
-                        <a href="javascript:;" class="pinterest">Partager sur pinterest</a>
-                    </li>
+        <form class="product-form">
+            <h1>Just do nothing sweater</h1>
+            <h2>Sweater “classique” navy en coton <a href="javascript:;" class="info-ask">?</a></h2>
+            <div class="price">29,90 € EUR</div>
+            <div class="color">
+                <label for="color-choose-big-form">Couleur</label>
+                <select name="test" id="color-choose-big-form">
+                    <option><span class="color" style="background-color:#0000CD"></span> Bleu marine</option>
+                    <option><span class="color" style="background-color:#13cd00"></span> Vert fluo</option>
+                    <option><span class="color" style="background-color:#cd0010"></span> Rouge coca</option>
+                    <option><span class="color" style="background-color:#000000"></span> Noir</option>
+                    <option><span class="color" style="background-color:#ffffff"></span> Blanc</option>
+                </select>
+            </div>
+            <div class="size">
+                <label>Taille <a href="javascript:;" class="info-ask">?</a></label>
+                <div class="hide"><input type="hidden" name="size" /></div>
+                <ul class="sizes list-unstyled">
+                    <li data-value="xs">XS</li>
+                    <li data-value="s">S</li>
+                    <li data-value="m" class="active">M</li>
+                    <li data-value="l">L</li>
+                    <li data-value="xl">XL</li>
                 </ul>
-                <div class="info-content clearfix"> <!-- Add class scroll-container -->
-                    <div id="infos">
-                        <p>Sweater <strong>Ma Copine C'est La Plus Fraiche</strong> de <a href="#">FRAICHE</a> pour Rad.</p>
+            </div>
+            <div class="quantity">
+                <label>Quantité</label>
+                <div class="quantity">
+                    <a href="javascript:;">+</a>
+                    <input type="text" name="qty" value="1" />
+                    <a href="javascript:;">-</a>
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" class="btn btn-danger" value="Ajouter au panier" />
+                <a href="#" class="whish">Ajouter à la liste de souhaits</a>
+            </div>
+            <div class="specs" role="tabpanel">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a class="text-underline-bottom" href="#infos" aria-controls="home" role="tab" data-toggle="tab"><span>Infos</span></a></li>
+                    <li role="presentation"><a class="text-underline-bottom" href="#details" aria-controls="details" role="tab" data-toggle="tab"><span>Détails</span></a></li>
+                    <li role="presentation"><a class="text-underline-bottom" href="#shipping" aria-controls="shipping" role="tab" data-toggle="tab"><span>Livraison et paiement</span></a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="infos">
                         <p>
-                            Sweater en poly-coton. <strong>Imprimé à la main</strong> et avec soin.<br />
-                            Coupe américaine, col rond, épaules et manches ajustées, bords côtelés et poignets resserrés.<br />
+                            Sweater en poly-coton. <strong>Imprimé à la main</strong> et avec soin.<br>
+                            Coupe américaine, col rond, épaules et manches ajustées, bords côtelés et poignets resserrés.<br>
                             <strong>Ultra confortable et doux à l'intérieur.</strong>
                         </p>
-                        <p>
-                            Ma Copine C'est La Plus Fraiche de Fraîche Store pour Rad.
-                        </p>
                     </div>
-                    <div id="details" class="hide">
+                    <div role="tabpanel" class="tab-pane" id="details">
                         <ul class="specs">
                             <li><strong>Coloris : </strong>Noir</li>
                             <li><strong>Artiste : </strong>Fraîche Store</li>
@@ -112,14 +85,24 @@
                             Taille unisexe, il est conseillé aux femmes de prendre une taille en dessous de leur taille habituelle.
                         </p>
                     </div>
-                    <div id="shipping-and-payment" class="hide">
-                        <p>Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test.</p>
-                        <p>Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test.</p>
-                        <p>Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test.</p>
+                    <div role="tabpanel" class="tab-pane" id="shipping">
+                        <p>Je suis le texte de test. Je suis le <p>Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test. Je suis le texte de test.</p>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="item-id">
+                Référence produit : SWT_JDN_313
+            </div>
+            <div class="shares">
+                <a class="fb" href="#"><span></span> Partager</a>
+                <a class="tw" href="#"><span></span> Tweeter</a>
+                <a class="pt" href="#"><span></span> Pinner</a>
+            </div>
+        </form>
     </div>
+<?php if (0) require 'pages/category.php'; ?>
+<div class="clearfix">
+    <br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br />
 </div>
-<?php require 'pages/category.php'; ?>

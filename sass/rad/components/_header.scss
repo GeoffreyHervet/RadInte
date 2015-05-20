@@ -12,7 +12,7 @@
         padding-bottom: 13px;
     }
 
-    .container {
+    .fake-container {
         position: relative;
         form.search {
             display: none;
@@ -73,51 +73,54 @@
 
     .cart-products {
         font-family: $helvetica-neue;
-        padding: 10px;
-        li {
-            &.border {
-                border-bottom: 1px solid $gray;
+        border: 1px solid $gray-light;
+        padding: 0;
+        li.product {
+            + li.product {
+                border-top: 1px solid $gray-f4;
             }
             font-size: 12px;
-            .cart-product {
-                padding: 12px 0;
-                min-width: 330px;
-                &:hover {
-                    text-decoration: none;
-                }
-                img {
-                    float: left;
-                    margin-right: 17px;
-                }
-                .price {
-                    float: right;
-                    padding-left: 5px;
-                }
-                .title {
-                    float: left;
-                    width: 160px;
-                    .specs {
-                        display: block;
-                        color: $gray;
-                    }
-                }
+            min-width: 330px;
+            margin: 0 6px;
+            padding: 13px 8px;
+            img {
+                width: 68px;
+                max-height: 104px;
+                float: left;
+                margin-right: 10px;
             }
-            &.total {
-                line-height: 46px;
+            .title, .price {
+                color: $black;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
+                display: block;
             }
-            &.actions {
-                a {
-                    float: left;
-                    clear: none;
+            .title {
+                height: 30px;
+            }
+            .specs {
+                color: $gray;
+            }
+        }
+        li.total {
+            border-top: 1px solid $gray-dd;
+            background: $gray-f4;
+            .price {
+                height: 50px;
+                display: block;
+                text-align: center;
+                line-height: 50px;
+                color: $red-light;
+                + a.btn-danger {
+                    display: block;
+                    color: $white;
                     font-weight: bold;
-                    width: 48%;
-                    padding-top: 9px;
-                    padding-bottom: 9px;
-                    &:first-child {
-                        margin-right: 4%;
-                    }
-                    &.btn-gray {
-                        color: $gray-dark;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    margin: 0 10px 10px 10px;
+                    &:hover {
+                        background-color: $red-light;
                     }
                 }
             }
@@ -203,6 +206,11 @@
     background: none;
 }
 
+
+.fake-container {
+    @extend .clearfix;
+    margin: 0 20px 0 0;
+}
 
 div.text-top {
     font-size: 12px;

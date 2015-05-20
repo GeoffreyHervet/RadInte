@@ -1,4 +1,4 @@
-<div class="container">
+<div class="fake-container">
     <div class="text-top">
         <div class="text-center">
             <span>
@@ -18,83 +18,66 @@
             <ul>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button"><span>Nouveautés</span></a>
-                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
-                        <li><a class="text-underline-hover" href="#"><span>Voir tout</span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
+                    <?php $menu = <<<EOL
+                    <ul class="dropdown-menu dropdown-menu-left menu-top" role="menu">
+                        <li class="left">
+                            <ul class="list-unstyled">
+                                <li><a class="text-underline-hover" href="#"><span>Voir tous les produits</span></a></li>
+                                <li><a class="text-underline-hover" href="#"><span>T-shirts (13)</span></a></li>
+                                <li><a class="text-underline-hover" href="#"><span>Sweaters (24)</span></a></li>
+                                <li><a class="text-underline-hover" href="#"><span>Vestes (32)</span></a></li>
+                                <li><a class="text-underline-hover" href="#"><span>Bonnets et casquettes (9)</span></a></li>
+                                <li><a class="text-underline-hover" href="#"><span>Bijoux (12)</span></a></li>
+                                <li><a class="text-underline-hover" href="#"><span>Chaussettes (32)</span></a></li>
+                                <li><a class="text-underline-hover" href="#"><span>Chaussures (9)</span></a></li>
+                                <li><a class="text-underline-hover" href="#"><span>Beauté (3)</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="right">
+                            <ul class="list-unstyled">
+                                <li class="collections">Collections</li>
+                                <li><a class="text-underline-hover" href="#"><span>Adieu et à demain</span></a></li>
+                                <li><a class="text-underline-hover" href="#"><span>Club pétanque</span></a></li>
+                                <li><a class="text-underline-hover" href="#"><span>Madame</span></a></li>
+                                <li><a class="text-underline-hover" href="#"><span>Mademoiselle</span></a></li>
+                                <li><a class="text-underline-hover" href="#"><span>Leah Flores</span></a></li>
+                            </ul>
+                        </li>
                     </ul>
+EOL;
+                    echo $menu; ?>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button"><span>Les tendances</span></a>
-                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
-                        <li><a class="text-underline-hover" href="#"><span>Voir tout</span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                    </ul>
+                    <?php echo $menu; ?>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button"><span>Colabs</span></a>
-                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
-                        <li><a class="text-underline-hover" href="#"><span>Voir tout</span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                    </ul>
+                    <?php echo $menu; ?>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button"><span>Femme</span></a>
-                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
-                        <li><a class="text-underline-hover" href="#"><span>Voir tout</span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                    </ul>
+                    <?php echo $menu; ?>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button"><span>Homme</span></a>
-                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
-                        <li><a class="text-underline-hover" href="#"><span>Voir tout</span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                    </ul>
+                    <?php echo $menu; ?>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button"><span>Kids</span></a>
-                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
-                        <li><a class="text-underline-hover" href="#"><span>Voir tout</span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                    </ul>
+                    <?php echo $menu; ?>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button"><span>Sport</span></a>
-                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
-                        <li><a href="#">Voir tout</a></li>
-                        <li><a href="#">Women <span class="text-gray">(13)</span></a></li>
-                        <li><a href="#">Women <span class="text-gray">(13)</span></a></li>
-                        <li><a href="#">Women <span class="text-gray">(13)</span></a></li>
-                    </ul>
+                    <?php echo $menu; ?>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button"><span>Histoires</span></a>
-                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
-                        <li><a class="text-underline-hover" href="#"><span>Voir tout</span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                    </ul>
+                    <?php echo $menu; ?>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle text-pink text-underline-hover" data-toggle="dropdown" role="button"><span>Promotions</span></a>
-                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
-                        <li><a class="text-underline-hover" href="#"><span>Voir tout</span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                        <li><a class="text-underline-hover" href="#"><span>Women <span class="text-gray">(13)</span></span></a></li>
-                    </ul>
+                    <?php echo $menu; ?>
                 </li>
             </ul>
         </nav>

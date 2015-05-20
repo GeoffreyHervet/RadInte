@@ -6,4 +6,22 @@
             height: 1px;
         }
     }
+
+    ul.dropdown-menu.links {
+        border-color: $gray-light;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        width: 130px;
+        > li > a {
+            color: $gray;
+            &:hover {
+                color: $black;
+            }
+            line-height: 22px;
+            height: 30px;
+            font-weight: normal;
+            font-size: 12px;
+            display: block;
+        }
+    }
 }

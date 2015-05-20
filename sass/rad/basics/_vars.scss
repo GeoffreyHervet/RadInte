@@ -10,6 +10,9 @@ $black-lighter:     #666666;
 $gray-light:        #c0c0c0;
 $gray:              #878787;
 $gray-dark:         #575757;
+$gray-white:        #e7eaee;
+$gray-f4:           #f4f4f4;
+$gray-dd:           #dddddd;
 $gray-disabled:     #d5d5d5;
 $beige:             #c3a98d;
 
@@ -42,3 +45,9 @@ $brand-danger:          $red-light;
 $btn-danger-border:     $red-light;
 $brand-primary:         $blue;
 $hr-border:             $gray-light;
+
+// Breadcrumb
+$breadcrumb-padding-horizontal: 0px;
+$breadcrumb-bg:                 $white;
+$breadcrumb-color:              $black;
+$breadcrumb-active-color:       $black;

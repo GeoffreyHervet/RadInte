@@ -1,18 +1,46 @@
-$bgColor: rgba(0,0,0,0.7);
 @media (min-width: 767px) {
     ul.dropdown-menu {
         border-radius: 0;
-        background-color: $bgColor;
-        a {
-            color: white;
-            &:hover {
-                color: white;
-                background: none;
-                text-decoration: underline;
+        background-color: $white;
+        border: 1px solid $gray-dd;
+        -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+        box-shadow: 0 0 0 0 rgba(0,0,0,0);
+        a, .collections {
+            color: $black;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 30px;
+            cursor: pointer;
+            &, span {
+                cursor: pointer;
             }
             &.text-underline-hover span:first-of-type:before {
                 bottom: -2px;
             }
         }
+        .collections {
+            color: $gray-light;
+            font-weight: bold;
+            line-height: 30px;
+        }
+
+        &.menu-top {
+            width: 370px;
+            background: $white;
+            .left {
+                float: left;
+                padding: 17px 20px 27px;
+                width: 200px;
+            }
+            .right {
+                float: left;
+                padding: 17px 0 27px;
+                width: 146px;
+            }
+        }
+    }
+
+    html > body nav.categories > ul > li > ul a {
+        line-height: 30px;
     }
 }

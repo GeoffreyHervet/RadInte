@@ -1,0 +1,14 @@
+.breadcrumb {
+    > li {
+        a {
+            color: $breadcrumb-color;
+        }
+
+    }
+    > .active {
+        text-decoration: underline;
+    }
+
+    margin-bottom: 5px;
+
+}
