@@ -127,10 +127,19 @@
 }
 
 ::selection {
-    background: $pink;
+    background: rgba(0,0,0,0.4);
 }
 ::-moz-selection {
-    background: $pink;
+    background: rgba(0,0,0,0.4);
+}
+
+.glass-search {
+    display: inline-block;
+    background: url(../img/loupe-search.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    margin-bottom: -6px;
 }
 
 
@@ -146,4 +155,10 @@ h4.small-title {
 
 .containter-rel {
     position: relative;
+}
+
+
+.fake-container {
+    @extend .clearfix;
+    margin: 0 15px 0 0;
 }

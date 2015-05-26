@@ -11,17 +11,19 @@
             font-weight: bold;
             line-height: 30px;
             cursor: pointer;
-            &, span {
-                cursor: pointer;
-            }
             &.text-underline-hover span:first-of-type:before {
                 bottom: -2px;
+            }
+
+            &, span {
+                cursor: pointer;
             }
         }
         .collections {
             color: $gray-light;
             font-weight: bold;
             line-height: 30px;
+            cursor: default !important;
         }
 
         &.menu-top {

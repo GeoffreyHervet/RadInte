@@ -12,6 +12,9 @@
         padding-bottom: 13px;
     }
 
+    &.navbar-fixed-top {
+        min-height: 47px;
+    }
     .fake-container {
         position: relative;
         form.search {
@@ -81,7 +84,9 @@
             }
             font-size: 12px;
             min-width: 330px;
-            margin: 0 6px;
+            margin: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
             padding: 13px 8px;
             img {
                 width: 68px;
@@ -102,17 +107,23 @@
             .specs {
                 color: $gray;
             }
+            &:hover {
+                background: $gray-f4;
+                border-color: $gray-f4;
+            }
         }
         li.total {
             border-top: 1px solid $gray-dd;
             background: $gray-f4;
             .price {
+                font-family: $arial;
                 height: 50px;
                 display: block;
                 text-align: center;
                 line-height: 50px;
                 color: $red-light;
                 + a.btn-danger {
+                    font-family: $arial;
                     display: block;
                     color: $white;
                     font-weight: bold;
@@ -139,10 +150,15 @@
     }
 }
 @media (min-width: 768px) {
-    .navbar-nav>li {
+    .navbar-nav > li {
         float: right;
+        > a {
+            padding-top: 13px;
+            padding-bottom: 14px;
+        }
     }
 }
+
 @media (max-width: 767px) {
     .navbar {
         &.navbar-nav {
@@ -205,12 +221,10 @@
 .nav > li > a:hover, .nav > li > a:focus, .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background: none;
 }
-
-
-.fake-container {
-    @extend .clearfix;
-    margin: 0 20px 0 0;
+.navbar-nav > li > a {
+    color: $gray;
 }
+
 
 div.text-top {
     font-size: 12px;
@@ -277,4 +291,8 @@ div.text-top {
     @media (max-width: 767px) {
         display: none;
     }
+}
+
+.navbar-brand {
+    height: 47px;
 }

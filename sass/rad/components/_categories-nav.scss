@@ -12,7 +12,7 @@ nav.categories {
             > li {
                 display: inline-block;
                 text-align: center;
-                padding: 0 2.5%;
+                padding: 0 2%;
                 @media (max-width: 1200px) {
                     padding: 0 2%;
                 }
@@ -23,10 +23,11 @@ nav.categories {
                     padding: 0 0.5%;
                 }
                 > a {
-                    font-family: $brandonFont;
+                    font-family: $helvetica-neue;
                     text-transform: uppercase;
-                    font-size: 12px;
-                    font-weight: 400;
+                    font-size: 13px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
                     padding-bottom: 17px;
                     color: $black;
                     &.text-pink {
@@ -35,6 +36,9 @@ nav.categories {
                     &.text-underline-hover:hover span:first-of-type:before {
                         bottom: -2px;
                     }
+                }
+                &.open > a {
+                    color: $gray-light;
                 }
                 > ul {
                     margin-top: 17px;

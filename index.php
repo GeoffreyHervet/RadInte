@@ -256,8 +256,8 @@
                 </li>
                 <li style="color: #ffffff">
                     <a href="#search" id="search-header">
-                        <i class="glyphicon-search glyphicon"></i>
-                        <span class="sm-only">&nbsp; Recherche</span>
+                        <i class="glass-search"></i>
+                        <span class="hidden-md hidden-lg">&nbsp; Recherche</span>
                         <span class="sr-only">Recherche</span>
                     </a>
                     <form role="form" method="GET" id="search-mobile" class="search-mobile search hide">
