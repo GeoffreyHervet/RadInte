@@ -1,7 +1,9 @@
+#sticky-category {
+}
 nav.categories {
     padding: 0;
-    margin-top: 20px;
-    padding-bottom: 17px;
+    margin-top: 8px;
+    padding-bottom: 20px;
     @media (min-width: 767px) {
         > ul {
             display: block;
@@ -14,10 +16,10 @@ nav.categories {
                 text-align: center;
                 padding: 0 2%;
                 @media (max-width: 1200px) {
-                    padding: 0 2%;
+                    padding: 0 1%;
                 }
                 @media (max-width: 992px) {
-                    padding: 0 1%;
+                    padding: 0 0.4%;
                 }
                 @media (max-width: 700px) {
                     padding: 0 0.5%;
@@ -27,7 +29,6 @@ nav.categories {
                     text-transform: uppercase;
                     font-size: 13px;
                     font-weight: 500;
-                    letter-spacing: 1px;
                     padding-bottom: 17px;
                     color: $black;
                     &.text-pink {
@@ -41,7 +42,7 @@ nav.categories {
                     color: $gray-light;
                 }
                 > ul {
-                    margin-top: 17px;
+                    margin-top: 20px;
                     a {
                         font-family: $helvetica-neue;
                         font-size: 12px;
@@ -65,7 +66,7 @@ nav.categories {
         left : -300px;
         z-index: 1101;
         margin-top: 0;
-        font-family: $brandonFont;
+        font-family: $helvetica-neue;
         > ul {
             margin-left: 0;
             margin-right: 0;

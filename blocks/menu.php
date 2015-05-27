@@ -1,25 +1,11 @@
-<div class="fake-container">
-    <div class="text-top">
-        <div class="text-center">
-            <span>
-                Invitez vos amis et gagnez 50€ de crédit d’achat -
-                <a class="text-underline-hover" href="#"><strong><span>Acheter une carte cadeau</span></strong></a>
-            </span>
-        </div>
-        <span class="pull-right text-right">
-            <span class="date">Mer. 25 Octobre 10:32 - expédié en 48hrs</span><br />
-            <a href="#" class="text-underline-bottom"><span>Service client</span></a>
-        </span>
-    </div>
-</div>
-<div id="sticky-category">
-    <div class="container">
-        <nav class="categories">
-            <ul>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button"><span>Nouveautés</span></a>
-                    <?php $menu = <<<EOL
-                    <ul class="dropdown-menu dropdown-menu-left menu-top" role="menu">
+<div class="container">
+    <nav class="categories clearfix">
+        <ul>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button">Nouveautés</a>
+                <?php $menu = function($add = '') {
+                    return <<<EOL
+                    <ul class="dropdown-menu dropdown-menu-left menu-top {$add}" role="menu">
                         <li class="left">
                             <ul class="list-unstyled">
                                 <li><a class="text-underline-hover" href="#"><span>Voir tous les produits</span></a></li>
@@ -45,41 +31,71 @@
                         </li>
                     </ul>
 EOL;
-                    echo $menu; ?>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button"><span>Les tendances</span></a>
-                    <?php echo $menu; ?>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button"><span>Colabs</span></a>
-                    <?php echo $menu; ?>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button"><span>Femme</span></a>
-                    <?php echo $menu; ?>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button"><span>Homme</span></a>
-                    <?php echo $menu; ?>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button"><span>Kids</span></a>
-                    <?php echo $menu; ?>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button"><span>Sport</span></a>
-                    <?php echo $menu; ?>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button"><span>Histoires</span></a>
-                    <?php echo $menu; ?>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle text-pink text-underline-hover" data-toggle="dropdown" role="button"><span>Promotions</span></a>
-                    <?php echo $menu; ?>
-                </li>
-            </ul>
-        </nav>
+                };
+                echo $menu(); ?>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button">Les tendances</a>
+                <?php echo $menu(); ?>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button">Colabs</a>
+                <?php echo $menu(); ?>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button">Femme</a>
+                <?php echo $menu(); ?>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button">Homme</a>
+                <?php echo $menu(); ?>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button">Kids</a>
+                <?php echo $menu(); ?>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button">Sport</a>
+                <?php echo $menu(); ?>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle text-underline-hover" data-toggle="dropdown" role="button">Histoires</a>
+                <?php echo $menu('pull-right'); ?>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle text-pink text-underline-hover" data-toggle="dropdown" role="button">Promotions</a>
+                <?php echo $menu('pull-right'); ?>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="fake-container hide">
+    <div class="text-top">
+        <br /><br /><br />
+        <div class="text-center hide">
+            <span>
+                Invitez vos amis et gagnez 50€ de crédit d’achat -
+                <a class="text-underline-hover" href="#"><strong><span>Acheter une carte cadeau</span></strong></a>
+            </span>
+        </div>
+        <span class="pull-right text-right hide">
+            <span class="date">Mer. 25 Octobre 10:32 - expédié en 48hrs</span><br />
+            <a href="#" class="text-underline-bottom"><span>Service client</span></a>
+        </span>
     </div>
+</div>
+<div class="container">
+    <!--    <div class="text-top">-->
+    <!--        <br /><br /><br />-->
+    <!--        <div class="text-center hide">-->
+    <!--            <span>-->
+    <!--                Invitez vos amis et gagnez 50€ de crédit d’achat --->
+    <!--                <a class="text-underline-hover" href="#"><strong><span>Acheter une carte cadeau</span></strong></a>-->
+    <!--            </span>-->
+    <!--        </div>-->
+    <!--        <span class="pull-right text-right hide">-->
+    <!--            <span class="date">Mer. 25 Octobre 10:32 - expédié en 48hrs</span><br />-->
+    <!--            <a href="#" class="text-underline-bottom"><span>Service client</span></a>-->
+    <!--        </span>-->
+    <!--    </div>-->
 </div>

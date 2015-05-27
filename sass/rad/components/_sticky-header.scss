@@ -1,0 +1,35 @@
+.sticky-header {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: $gray-f4;
+    border-bottom: 1px solid $gray-light;
+    height: 47px;
+    line-height: 47px;
+    z-index: $zindex-navbar-fixed;
+
+    .left-part {
+        float: left;
+        height: 100%;
+        display: block;
+        padding: 0 15px;
+        width: 87px;
+    }
+    .right-part {
+        float: right;
+        height: 100%;
+        display: block;
+        padding: 0 15px;
+    }
+    nav.categories {
+        margin-top: 0;
+        > ul > li > ul {
+            margin-top: -1px;
+            li  ul li {
+                height: 30px;
+                line-height: 30px;
+            }
+        }
+    }
+}

@@ -4,6 +4,41 @@ $animation-duration: 0.4s;
 $shadow: rgba(0,0,0,0.4);
 
 @media (max-width: 767px) {
+    .navbar.navbar-top {
+        z-index: 9999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: 0;
+    }
+
+    #site-wrapper, .navbar-fixed-top, .navbar.navbar-top, nav.categories {
+        margin-left: 0;
+        -webkit-transition: left $animation-duration, margin-left $animation-duration;
+        transition: left $animation-duration, margin-left $animation-duration;
+        width: 100%;
+    }
+    .nav-left {
+        .navbar.navbar-top, #site-wrapper {
+            margin-left:  $medium-width;
+            @media (max-width: 500px) {
+                margin-left: $small-width;
+            }
+        }
+
+        nav.categories {
+            overflow-y: scroll;
+            -webkit-box-shadow: inset -7px 0 9px -7px $shadow;
+            box-shadow: inset -7px 0 9px -7px $shadow;
+            left: 0;
+            width: $medium-width;
+            @media (max-width: 500px) {
+                width: $small-width;
+            }
+        }
+    }
+
     nav.categories {
         li.dropdown {
             a {
@@ -58,39 +93,29 @@ $shadow: rgba(0,0,0,0.4);
         }
     }
 
-    html.nav-left {
-        nav.categories {
-            overflow-y: scroll;
-            -webkit-box-shadow: inset -7px 0 9px -7px $shadow;
-            box-shadow: inset -7px 0 9px -7px $shadow;
-            left: 0;
-            width: $medium-width;
-            @media (max-width: 500px) {
-                width: $small-width;
-            }
+    .navbar .navbar-right {
+        width: $medium-width;
+        @media (max-width: 500px) {
+            width: $small-width;
         }
 
-        #site-wrapper, .navbar-fixed-top {
-            position: fixed;
-            left: $medium-width;
-            @media (max-width: 500px) {
-                left: $small-width;
-            }
-        }
+        padding-right: 0;
+        right: 0;
+        left: 100%;
+        -webkit-transition: left $animation-duration;
+        transition: left $animation-duration;
+        overflow-y: auto;
     }
 
     html.nav-right {
         .navbar .navbar-right {
-            right: 0;
-            width: $medium-width;
-            overflow-y: scroll;
-            padding-bottom: 80px;
+            left: 50%;
             @media (max-width: 500px) {
-                width: $small-width;
+                left: 20%;
             }
-        }
 
-        #site-wrapper, .navbar-fixed-top {
+        }
+        .navbar.navbar-top, #site-wrapper {
             margin-left: -$medium-width;
             @media (max-width: 500px) {
                 margin-left: -$small-width;
@@ -98,23 +123,12 @@ $shadow: rgba(0,0,0,0.4);
         }
     }
 
+
     nav.categories {
-        left: -100%;
-        -webkit-transition: left $animation-duration;
-        transition: left $animation-duration;
         background: white;
     }
 
-    .navbar .navbar-right {
-        -webkit-transition: right $animation-duration;
-        transition: right $animation-duration;
-    }
-
-    #site-wrapper, .navbar-fixed-top {
-        margin-left: 0;
-        left: 0;
-        width: 100%;
-        -webkit-transition: margin-left $animation-duration, left $animation-duration;
-        transition: margin-left $animation-duration, left $animation-duration;
+    .navbar .cart-resume .cart-item, body .cart-numbers {
+        width: 95%;
     }
 }

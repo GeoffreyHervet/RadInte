@@ -1,19 +1,24 @@
 .navbar {
     background: white;
     border-bottom: 1px solid $gray-light;
-    font-family: $brandonFont;
+    font-family: $helvetica-neue;
 
     &, a {
         color: $black;
-        font-size: em(14);
+        font-size: 13px;
+        font-weight: 300;
     }
     & > li > a {
         padding-top: 13px;
         padding-bottom: 13px;
     }
 
-    &.navbar-fixed-top {
+    &.navbar-top {
         min-height: 47px;
+        background: $gray-f4;
+        .navbar-collapse.collapse.navbar-right {
+            padding-right: 0;
+        }
     }
     .fake-container {
         position: relative;
@@ -29,9 +34,12 @@
             top: 0;
             bottom: 0;
             right: 0;
-            background: white;
+            background: $gray-f4;
             z-index: 10;
 
+            a {
+                float: left;
+            }
             i.glyphicon {
                 font-size: 20px;
                 padding-top: 12px;
@@ -41,10 +49,13 @@
             input {
                 border: none;
                 color: $black;
+                margin: 9px 0 0 0;
+                text-indent: 10px;
                 font-size: em(20);
                 font-weight: bold;
                 font-family: $helvetica-neue;
-                width: 800px;
+                width: 50%;
+                background: $gray-f4;
                 &, &:focus {
                     outline: none;
                 }
@@ -88,6 +99,16 @@
             border-left: 6px solid transparent;
             border-right: 6px solid transparent;
             padding: 13px 8px;
+            position: relative;
+            .remove-item {
+                position: absolute;
+                right: 0px;
+                top: 10px;
+                display: block;
+                background: url(../img/cart-resume-close.png) no-repeat;
+                width: 16px;
+                height: 16px;
+            }
             img {
                 width: 68px;
                 max-height: 104px;
@@ -105,7 +126,11 @@
                 height: 30px;
             }
             .specs {
-                color: $gray;
+                color: $gray-bb;
+                font-weight: 100;
+                strong {
+                    font-weight: 400;
+                }
             }
             &:hover {
                 background: $gray-f4;
@@ -115,6 +140,7 @@
         li.total {
             border-top: 1px solid $gray-dd;
             background: $gray-f4;
+            letter-spacing: 0.3px;
             .price {
                 font-family: $arial;
                 height: 50px;
@@ -131,7 +157,7 @@
                     text-transform: uppercase;
                     margin: 0 10px 10px 10px;
                     &:hover {
-                        background-color: $red-light;
+                        background-color: #e61719;
                     }
                 }
             }
@@ -178,12 +204,10 @@
             visibility: visible;
 
             position: fixed;
-            right: -300px;
             top: 0;
             bottom: 0;
             background: $white;
             z-index: 1101;
-            width: 300px;
             margin: 0;
             min-height: 100%;
             max-height: 100%;

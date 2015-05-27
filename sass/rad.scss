@@ -3,11 +3,10 @@
 @import "rad/index";
 
 
-
 body {
     font-size: 14px;
     font-family: $helvetica-neue;
-    padding-top: 51px;
+    padding-top: 0;
     padding-bottom: 31px;
     &.gray {
         background-color: $white-dark;
