@@ -1,3 +1,4 @@
+<a class="visible-lg country-left text-underline-bottom" data-toggle="modal" href="modals/country.html" data-target="#default-modal"><span>France</span></a>
 <div class="container">
     <nav class="categories clearfix">
         <ul>

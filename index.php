@@ -110,7 +110,7 @@ EOL;
 </div>
 
 <div id="fb-root"></div>
-<!--<script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1448799852059806&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>-->
+<script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1448799852059806&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
 <div id="site-wrapper">
 <div class="promo-top">
     30% de réduction avec le code promo SPRING30
@@ -320,7 +320,7 @@ EOL;
                         </li>
                     </ul>
                 </li>
-                <li><a data-toggle="modal" href="modals/country.html" data-target="#default-modal">France</a></li>
+                <li><a data-toggle="modal" class="hidden-lg" href="modals/country.html" data-target="#default-modal">France</a></li>
                 <li><a href="?p=inscription">Inscription</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Mon compte</a>
@@ -374,12 +374,16 @@ EOL;
 <footer class="fixed-footer">
     <div class="container">
         <ul>
-            <li><a class="text-black text-underline-hover" data-toggle="modal" href="modals/service-client.html" data-target="#default-modal"><span>Service client</span></a></li>
-            <li><a class="text-gray text-underline-hover" href="#"><span>Presse</span></a></li>
+            <li><a class="text-black text-underline-hover" data-toggle="modal" href="modals/service-client.html" data-target="#default-modal"><span>Contactez-nous</span></a></li>
+            <li><a class="text-gray text-underline-hover" href="#"><span>Aide</span></a></li>
             <li><a class="text-gray text-underline-hover" href="#"><span>Newsletter</span></a></li>
-            <li><a class="text-gray text-underline-hover" href="#"><span>Recrutement</span></a></li>
-            <li><a class="text-gray text-underline-hover" href="#"><span>Suivez-nous</span></a></li>
+            <li><a class="text-gray text-underline-hover" href="#"><span>Termes et Conditions</span></a></li>
+            <li><a class="text-gray text-underline-hover" href="#"><span>Livraison et Retours</span></a></li>
             <li><div class="fb-like" data-href="https://www.facebook.com/rad" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div></li>
+
+            <li><a class="text-gray text-underline-hover" target="_blank" href="https://www.facebook.com/rad"><span>Facebook</span></a></li>
+            <li><a class="text-gray text-underline-hover" target="_blank" href="https://www.twitter.com/radshop"><span>Twitter</span></a></li>
+            <li><a class="text-gray text-underline-hover" target="_blank" href="http://instagram.com/rad"><span>Instagram</span></a></li>
         </ul>
     </div>
 </footer>

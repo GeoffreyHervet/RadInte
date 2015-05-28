@@ -25,7 +25,8 @@
     var $window = $(window);
     var $menu = $('#sticky-header');
     $window.on('scroll', function(){
-        if ($window.scrollTop() >  100) {
+        //if ($window.scrollTop() >  100) {
+        if ($window.scrollTop() >  95) {
             $menu.show();
         }
         else {

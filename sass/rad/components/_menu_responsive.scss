@@ -4,6 +4,9 @@ $animation-duration: 0.4s;
 $shadow: rgba(0,0,0,0.4);
 
 @media (max-width: 767px) {
+    .navbar-toggle {
+        margin-right: 0;
+    }
     .navbar.navbar-top {
         z-index: 9999;
         position: fixed;
@@ -130,5 +133,14 @@ $shadow: rgba(0,0,0,0.4);
 
     .navbar .cart-resume .cart-item, body .cart-numbers {
         width: 95%;
+    }
+
+    nav.categories li.dropdown ul > li.collections {
+        height: 28px;
+        line-height: 28px;
+        background: $white;
+        color: $black;
+        text-indent: 15px;
+        font-weight: bold;
     }
 }

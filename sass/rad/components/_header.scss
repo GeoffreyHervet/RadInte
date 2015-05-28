@@ -2,6 +2,7 @@
     background: white;
     border-bottom: 1px solid $gray-light;
     font-family: $helvetica-neue;
+    margin-bottom: 14px;
 
     &, a {
         color: $black;
@@ -319,4 +320,21 @@ div.text-top {
 
 .navbar-brand {
     height: 47px;
+}
+
+.country-left {
+    float: left;
+    width: 100px;
+    margin-top: 8px;
+    &,&:hover {
+        color: $gray;
+    }
+    font-size: 13px;
+    font-family: $helvetica-neue;
+    background: url(../img/pin-country.png) no-repeat left center;
+    padding-left: 20px;
+    margin-left: 15px;
+//    span:before {
+//        bottom: -2px;
+//    }
 }
